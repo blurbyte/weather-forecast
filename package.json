@@ -1,0 +1,25 @@
+{
+  "name": "weather-forecast",
+  "version": "0.1.0",
+  "description": "Five day weather forecast with style",
+  "private": true,
+  "dependencies": {
+    "react": "16.3.2",
+    "react-dom": "16.3.2",
+    "react-scripts": "1.1.4"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/blurbyte/react-typescript-quickstart"
+  },
+  "engines": {
+    "node": ">=8"
+  },
+  "author": "blurbyte",
+  "license": "MIT"
+}
