@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<header
+  className="sc-htpNat emHhqv"
+>
+  <div
+    className="sc-bwzfXH fNOhzS sc-bdVaJa hyUlrz"
+  >
+    <Logo />
+  </div>
+</header>
+`;
