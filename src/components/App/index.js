@@ -1,9 +1,16 @@
 import React, { Component } from 'react';
+
 import Header from '../Header';
+import PresentDay from '../PresentDay';
 
 class App extends Component {
   render() {
-    return <Header />;
+    return (
+      <div>
+        <Header />
+        <PresentDay />
+      </div>
+    );
   }
 }
 

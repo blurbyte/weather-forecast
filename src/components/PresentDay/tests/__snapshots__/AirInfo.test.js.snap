@@ -1,0 +1,38 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div
+  className="sc-bdVaJa DYOsF"
+>
+  <p
+    className="sc-htpNat hwCFSM sc-bwzfXH fBSZGv"
+  >
+    <span
+      className="sc-bxivhb iBbKEM"
+    >
+      Wind
+    </span>
+     5.1 m/s
+  </p>
+  <p
+    className="sc-htpNat hwCFSM sc-bwzfXH fBSZGv"
+  >
+    <span
+      className="sc-bxivhb iBbKEM"
+    >
+      Humidity
+    </span>
+     42 %
+  </p>
+  <p
+    className="sc-htpNat hwCFSM sc-bwzfXH fBSZGv"
+  >
+    <span
+      className="sc-bxivhb iBbKEM"
+    >
+      Pressure
+    </span>
+     1012 hpa
+  </p>
+</div>
+`;

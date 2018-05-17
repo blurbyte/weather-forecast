@@ -1,0 +1,28 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div
+  className="sc-bdVaJa DYOsF"
+>
+  <p
+    className="sc-htpNat hwCFSM sc-bwzfXH fBSZGv"
+  >
+    <span
+      className="sc-bxivhb iBbKEM"
+    >
+      Sunrise
+    </span>
+     5:50
+  </p>
+  <p
+    className="sc-htpNat hwCFSM sc-bwzfXH fBSZGv"
+  >
+    <span
+      className="sc-bxivhb iBbKEM"
+    >
+      Sunset
+    </span>
+     20:45
+  </p>
+</div>
+`;
