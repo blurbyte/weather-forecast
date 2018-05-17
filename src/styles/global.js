@@ -1,7 +1,7 @@
 import { injectGlobal } from 'styled-components';
 
 injectGlobal`
-  @import url('https://fonts.googleapis.com/css?family=Noto+Serif:700&subset=latin-ext');
+  @import url('https://fonts.googleapis.com/css?family=Cardo:700&subset=latin-ext');
 
   html {
     font-size: 62.5%;
@@ -15,5 +15,6 @@ injectGlobal`
     font-size: 1.4rem;
     font-weight: 400;
     overflow-y: scroll;
+    user-select: none;
   }
 `;
