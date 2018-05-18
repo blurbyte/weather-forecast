@@ -8,8 +8,7 @@ const Content = styled(Section)`
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 4rem 0;
-  border-bottom: 1px solid #222222;
+  padding: 4rem 2rem;
 `;
 
 export default Content;

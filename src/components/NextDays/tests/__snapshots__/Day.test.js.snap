@@ -31,12 +31,12 @@ exports[`renders correctly 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  margin-top: 0.4rem;
+  margin: 0.4rem 0;
 }
 
 .c3 {
   margin-left: 2rem;
-  margin-top: 0.2rem;
+  margin-top: 0.4rem;
 }
 
 .c4 {

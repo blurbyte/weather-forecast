@@ -2,12 +2,12 @@
 
 exports[`renders correctly 1`] = `
 .c0 {
-  max-width: 100rem;
-  padding: 0 2rem;
-  margin: 0 auto;
+  height: 6rem;
+  border-top: 1px solid rgba(34,34,34,0.3);
+  grid-area: footer;
 }
 
-<div
+<footer
   className="c0"
 />
 `;

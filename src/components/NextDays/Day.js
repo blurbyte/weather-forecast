@@ -10,12 +10,12 @@ const Wrapper = styled.li`
 
 const Info = styled.div`
   display: flex;
-  margin-top: 0.4rem;
+  margin: 0.4rem 0;
 `;
 
 const Temperatures = styled.div`
   margin-left: 2rem;
-  margin-top: 0.2rem;
+  margin-top: 0.4rem;
 `;
 
 const Temperature = styled(Text).attrs({

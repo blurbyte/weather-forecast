@@ -1,15 +1,15 @@
 import React from 'react';
 
+import Text from '../Text';
 import Content from './Content';
 import Layout from './Layout';
-import Logo from './Logo';
 
-const Header = () => (
+const Footer = () => (
   <Layout>
     <Content>
-      <Logo />
+      <Text dimmed>Data from OpenWeatherMap</Text>
     </Content>
   </Layout>
 );
 
-export default Header;
+export default Footer;
