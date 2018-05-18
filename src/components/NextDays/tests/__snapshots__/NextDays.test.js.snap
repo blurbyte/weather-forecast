@@ -16,7 +16,7 @@ exports[`renders correctly 1`] = `
         Thursday
       </p>
       <div
-        className="sc-ifAKCX WOpjk"
+        className="sc-ifAKCX iFqtqX"
       >
         <WeatherIcon
           small={true}
@@ -51,7 +51,7 @@ exports[`renders correctly 1`] = `
         Thursday
       </p>
       <div
-        className="sc-ifAKCX WOpjk"
+        className="sc-ifAKCX iFqtqX"
       >
         <WeatherIcon
           small={true}
@@ -86,7 +86,7 @@ exports[`renders correctly 1`] = `
         Thursday
       </p>
       <div
-        className="sc-ifAKCX WOpjk"
+        className="sc-ifAKCX iFqtqX"
       >
         <WeatherIcon
           small={true}
@@ -121,7 +121,7 @@ exports[`renders correctly 1`] = `
         Thursday
       </p>
       <div
-        className="sc-ifAKCX WOpjk"
+        className="sc-ifAKCX iFqtqX"
       >
         <WeatherIcon
           small={true}

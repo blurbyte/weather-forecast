@@ -10,6 +10,7 @@ const Wrapper = styled.li`
 
 const Info = styled.div`
   display: flex;
+  margin-top: 0.4rem;
 `;
 
 const Temperatures = styled.div`
