@@ -1,79 +1,37 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`renders correctly 1`] = `
-.c1 {
-  font-size: 1.8rem;
-  color: #222222;
-  margin: 0;
-  text-transform: uppercase;
-}
-
-.c5 {
-  font-size: 1.8rem;
-  color: rgba(34,34,34,0.5);
-  margin: 0;
-  text-transform: uppercase;
-}
-
-.c6 {
-  font-size: 1.4rem;
-  color: #222222;
-  margin: 0;
-  text-transform: none;
-}
-
-.c0 {
-  margin-top: 2rem;
-}
-
-.c2 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  margin: 0.4rem 0;
-}
-
-.c3 {
-  margin-left: 2rem;
-  margin-top: 0.4rem;
-}
-
-.c4 {
-  line-height: 1.2;
-}
-
 <li
-  className="c0"
+  className="sc-bwzfXH izCWbQ"
 >
   <p
-    className="c1"
+    className="sc-bdVaJa hPriLU"
   >
     Thursday
   </p>
   <div
-    className="c2"
+    className="sc-htpNat guTXPI"
   >
     <WeatherIcon
       small={true}
     />
     <div
-      className="c3"
+      className="sc-bxivhb gejLxX"
     >
       <p
-        className="c4 c1"
+        className="sc-ifAKCX khrclq sc-bdVaJa hPriLU"
       >
         20
       </p>
       <p
-        className="c4 c5"
+        className="sc-ifAKCX khrclq sc-bdVaJa dHtVOb"
       >
         14
       </p>
     </div>
   </div>
   <p
-    className="c6"
+    className="sc-EHOje imawgo sc-bdVaJa jxXTGO"
   >
     Clear sky
   </p>
