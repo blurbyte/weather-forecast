@@ -3,6 +3,10 @@ import renderer from 'react-test-renderer';
 
 import WeatherIcon from '../index';
 
+jest.mock('../../Icons', () => ({
+  ClearSkyDay: 'ClearSkyDay'
+}));
+
 test('renders correctly', () => {
   const component = renderer.create(<WeatherIcon />);
   expect(component.toJSON()).toMatchSnapshot();

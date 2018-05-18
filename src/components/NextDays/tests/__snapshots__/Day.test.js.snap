@@ -1,0 +1,80 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+.c1 {
+  font-size: 1.8rem;
+  color: #222222;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.c5 {
+  font-size: 1.8rem;
+  color: rgba(34,34,34,0.5);
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.c6 {
+  font-size: 1.4rem;
+  color: #222222;
+  margin: 0;
+  text-transform: none;
+}
+
+.c0 {
+  margin-top: 2rem;
+}
+
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.c3 {
+  margin-left: 2rem;
+  margin-top: 0.2rem;
+}
+
+.c4 {
+  line-height: 1.2;
+}
+
+<li
+  className="c0"
+>
+  <p
+    className="c1"
+  >
+    Thursday
+  </p>
+  <div
+    className="c2"
+  >
+    <WeatherIcon
+      small={true}
+    />
+    <div
+      className="c3"
+    >
+      <p
+        className="c4 c1"
+      >
+        20
+      </p>
+      <p
+        className="c4 c5"
+      >
+        14
+      </p>
+    </div>
+  </div>
+  <p
+    className="c6"
+  >
+    Clear sky
+  </p>
+</li>
+`;

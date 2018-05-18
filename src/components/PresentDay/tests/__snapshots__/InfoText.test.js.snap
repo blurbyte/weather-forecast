@@ -5,12 +5,11 @@ exports[`renders correctly 1`] = `
   font-size: 1.4rem;
   color: #222222;
   margin: 0;
-  text-transform: uppercase;
+  text-transform: none;
 }
 
 .c0 {
   margin: 0.2rem 2rem 0.2rem 0;
-  text-transform: none;
 }
 
 .c0:last-child {

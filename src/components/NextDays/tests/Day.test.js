@@ -2,13 +2,11 @@ import React from 'react';
 import renderer from 'react-test-renderer';
 import 'jest-styled-components';
 
-import WeatherIcon from '../WeatherIcon';
+import Day from '../Day';
 
-jest.mock('../../Icons', () => ({
-  ClearSkyDay: 'ClearSkyDay'
-}));
+jest.mock('../../WeatherIcon', () => 'WeatherIcon');
 
 test('renders correctly', () => {
-  const component = renderer.create(<WeatherIcon />);
+  const component = renderer.create(<Day />);
   expect(component.toJSON()).toMatchSnapshot();
 });

@@ -1,0 +1,152 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div
+  className="sc-bdVaJa hyUlrz"
+>
+  <ul
+    className="sc-bwzfXH WOqUP"
+  >
+    <li
+      className="sc-bxivhb gpoiXE"
+    >
+      <p
+        className="sc-htpNat brfPLX"
+      >
+        Thursday
+      </p>
+      <div
+        className="sc-ifAKCX WOpjk"
+      >
+        <WeatherIcon
+          small={true}
+        />
+        <div
+          className="sc-EHOje cEIgwp"
+        >
+          <p
+            className="sc-bZQynM guznUi sc-htpNat brfPLX"
+          >
+            20
+          </p>
+          <p
+            className="sc-bZQynM guznUi sc-htpNat gZTtHB"
+          >
+            14
+          </p>
+        </div>
+      </div>
+      <p
+        className="sc-htpNat gyyIpD"
+      >
+        Clear sky
+      </p>
+    </li>
+    <li
+      className="sc-bxivhb gpoiXE"
+    >
+      <p
+        className="sc-htpNat brfPLX"
+      >
+        Thursday
+      </p>
+      <div
+        className="sc-ifAKCX WOpjk"
+      >
+        <WeatherIcon
+          small={true}
+        />
+        <div
+          className="sc-EHOje cEIgwp"
+        >
+          <p
+            className="sc-bZQynM guznUi sc-htpNat brfPLX"
+          >
+            20
+          </p>
+          <p
+            className="sc-bZQynM guznUi sc-htpNat gZTtHB"
+          >
+            14
+          </p>
+        </div>
+      </div>
+      <p
+        className="sc-htpNat gyyIpD"
+      >
+        Clear sky
+      </p>
+    </li>
+    <li
+      className="sc-bxivhb gpoiXE"
+    >
+      <p
+        className="sc-htpNat brfPLX"
+      >
+        Thursday
+      </p>
+      <div
+        className="sc-ifAKCX WOpjk"
+      >
+        <WeatherIcon
+          small={true}
+        />
+        <div
+          className="sc-EHOje cEIgwp"
+        >
+          <p
+            className="sc-bZQynM guznUi sc-htpNat brfPLX"
+          >
+            20
+          </p>
+          <p
+            className="sc-bZQynM guznUi sc-htpNat gZTtHB"
+          >
+            14
+          </p>
+        </div>
+      </div>
+      <p
+        className="sc-htpNat gyyIpD"
+      >
+        Clear sky
+      </p>
+    </li>
+    <li
+      className="sc-bxivhb gpoiXE"
+    >
+      <p
+        className="sc-htpNat brfPLX"
+      >
+        Thursday
+      </p>
+      <div
+        className="sc-ifAKCX WOpjk"
+      >
+        <WeatherIcon
+          small={true}
+        />
+        <div
+          className="sc-EHOje cEIgwp"
+        >
+          <p
+            className="sc-bZQynM guznUi sc-htpNat brfPLX"
+          >
+            20
+          </p>
+          <p
+            className="sc-bZQynM guznUi sc-htpNat gZTtHB"
+          >
+            14
+          </p>
+        </div>
+      </div>
+      <p
+        className="sc-htpNat gyyIpD"
+      >
+        Clear sky
+      </p>
+    </li>
+  </ul>
+</div>
+`;
