@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 
 import Header from '../Header';
 import PresentDay from '../PresentDay';
+import NextDays from '../NextDays';
 
 class App extends Component {
   render() {
@@ -9,6 +10,7 @@ class App extends Component {
       <div>
         <Header />
         <PresentDay />
+        <NextDays />
       </div>
     );
   }

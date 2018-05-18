@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 import BaseRow from '../Row';
-import WeatherIcon from './WeatherIcon';
+import WeatherIcon from '../WeatherIcon';
 import Temperature from './Temperature';
 
 const Row = styled(BaseRow)`
