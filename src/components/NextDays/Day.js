@@ -1,31 +1,22 @@
 import React from 'react';
 import styled from 'styled-components';
 
+import media from '../../styles/media';
 import Text from '../Text';
 import WeatherIcon from '../WeatherIcon';
+import ListItem from './ListItem';
+import Info from './Info';
+import Temperatures from './Temperatures';
+import Temperature from './Temperature';
 
-const Wrapper = styled.li`
-  margin-top: 2rem;
-`;
-
-const Info = styled.div`
-  display: flex;
-  margin: 0.4rem 0;
-`;
-
-const Temperatures = styled.div`
-  margin-left: 2rem;
-  margin-top: 0.4rem;
-`;
-
-const Temperature = styled(Text).attrs({
-  big: true
-})`
-  line-height: 1.2;
+const Summary = styled(Text)`
+  ${media.tablet`
+    display: none;
+  `};
 `;
 
 const Day = () => (
-  <Wrapper>
+  <ListItem>
     <Text big>Thursday</Text>
     <Info>
       <WeatherIcon small />
@@ -34,8 +25,8 @@ const Day = () => (
         <Temperature dimmed>14</Temperature>
       </Temperatures>
     </Info>
-    <Text>Clear sky</Text>
-  </Wrapper>
+    <Summary>Clear sky</Summary>
+  </ListItem>
 );
 
 export default Day;
