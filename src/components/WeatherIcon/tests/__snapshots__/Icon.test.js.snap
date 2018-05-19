@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders BrokenClouds 1`] = `<BrokenClouds />`;
+
+exports[`renders BrokenClouds 2`] = `<BrokenClouds />`;
+
+exports[`renders ClearSky 1`] = `<ClearSkyDay />`;
+
+exports[`renders ClearSky by default 1`] = `<ClearSkyDay />`;
+
+exports[`renders FewClouds 1`] = `<FewClouds />`;
+
+exports[`renders Mist 1`] = `<Mist />`;
+
+exports[`renders Rain 1`] = `<Rain />`;
+
+exports[`renders ScatteredClouds 1`] = `<ScatteredClouds />`;
+
+exports[`renders ShowerRain 1`] = `<ShowerRain />`;
+
+exports[`renders Snow 1`] = `<Snow />`;
+
+exports[`renders Thunderstorm 1`] = `<Thunderstorm />`;

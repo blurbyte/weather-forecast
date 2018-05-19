@@ -19,7 +19,7 @@ const Day = () => (
   <ListItem>
     <Text big>Thursday</Text>
     <Info>
-      <WeatherIcon small />
+      <WeatherIcon weatherId={801} small />
       <Temperatures>
         <Temperature>20</Temperature>
         <Temperature dimmed>14</Temperature>

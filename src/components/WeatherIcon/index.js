@@ -1,16 +1,17 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import { ClearSkyDay } from '../Icons';
 import Wrapper from './Wrapper';
+import Icon from './Icon';
 
-const WeatherIcon = ({ small }) => (
+const WeatherIcon = ({ weatherId, small }) => (
   <Wrapper small={small}>
-    <ClearSkyDay />
+    <Icon weatherId={weatherId} />
   </Wrapper>
 );
 
 WeatherIcon.propTypes = {
+  weatherId: PropTypes.number.isRequired,
   small: PropTypes.bool
 };
 

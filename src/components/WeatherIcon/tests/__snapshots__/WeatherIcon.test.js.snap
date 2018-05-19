@@ -4,7 +4,9 @@ exports[`renders correctly 1`] = `
 <div
   className="sc-bdVaJa jdGJAZ"
 >
-  <ClearSkyDay />
+  <Icon
+    weatherId={800}
+  />
 </div>
 `;
 
@@ -12,6 +14,8 @@ exports[`renders correctly when small prop is provided 1`] = `
 <div
   className="sc-bdVaJa jmLRzy"
 >
-  <ClearSkyDay />
+  <Icon
+    weatherId={800}
+  />
 </div>
 `;
