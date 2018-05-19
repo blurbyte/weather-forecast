@@ -2,147 +2,147 @@
 
 exports[`renders correctly 1`] = `
 <section
-  className="sc-bwzfXH ezMGVG"
+  className="sc-htpNat fSLsdi sc-bwzfXH ezMGVG"
 >
   <ul
-    className="sc-htpNat DQJBa"
+    className="sc-bxivhb hsyjVa"
   >
     <li
-      className="sc-ifAKCX cjqzFS"
+      className="sc-EHOje ersua"
     >
       <p
-        className="sc-bxivhb dOVVdo"
+        className="sc-ifAKCX hKdhvO"
       >
         Thursday
       </p>
       <div
-        className="sc-EHOje jqKkr"
+        className="sc-bZQynM dmFkjk"
       >
         <WeatherIcon
           small={true}
         />
         <div
-          className="sc-bZQynM hJrpdX"
+          className="sc-gzVnrw jkMAnm"
         >
           <p
-            className="sc-gzVnrw eLePjw sc-bxivhb dOVVdo"
+            className="sc-htoDjs giMnYx sc-ifAKCX hKdhvO"
           >
             20
           </p>
           <p
-            className="sc-gzVnrw eLePjw sc-bxivhb jrPpOY"
+            className="sc-htoDjs giMnYx sc-ifAKCX evienz"
           >
             14
           </p>
         </div>
       </div>
       <p
-        className="sc-bxivhb kDFTQb"
+        className="sc-dnqmqq jyqbrI sc-ifAKCX dWGyF"
       >
         Clear sky
       </p>
     </li>
     <li
-      className="sc-ifAKCX cjqzFS"
+      className="sc-EHOje ersua"
     >
       <p
-        className="sc-bxivhb dOVVdo"
+        className="sc-ifAKCX hKdhvO"
       >
         Thursday
       </p>
       <div
-        className="sc-EHOje jqKkr"
+        className="sc-bZQynM dmFkjk"
       >
         <WeatherIcon
           small={true}
         />
         <div
-          className="sc-bZQynM hJrpdX"
+          className="sc-gzVnrw jkMAnm"
         >
           <p
-            className="sc-gzVnrw eLePjw sc-bxivhb dOVVdo"
+            className="sc-htoDjs giMnYx sc-ifAKCX hKdhvO"
           >
             20
           </p>
           <p
-            className="sc-gzVnrw eLePjw sc-bxivhb jrPpOY"
+            className="sc-htoDjs giMnYx sc-ifAKCX evienz"
           >
             14
           </p>
         </div>
       </div>
       <p
-        className="sc-bxivhb kDFTQb"
+        className="sc-dnqmqq jyqbrI sc-ifAKCX dWGyF"
       >
         Clear sky
       </p>
     </li>
     <li
-      className="sc-ifAKCX cjqzFS"
+      className="sc-EHOje ersua"
     >
       <p
-        className="sc-bxivhb dOVVdo"
+        className="sc-ifAKCX hKdhvO"
       >
         Thursday
       </p>
       <div
-        className="sc-EHOje jqKkr"
+        className="sc-bZQynM dmFkjk"
       >
         <WeatherIcon
           small={true}
         />
         <div
-          className="sc-bZQynM hJrpdX"
+          className="sc-gzVnrw jkMAnm"
         >
           <p
-            className="sc-gzVnrw eLePjw sc-bxivhb dOVVdo"
+            className="sc-htoDjs giMnYx sc-ifAKCX hKdhvO"
           >
             20
           </p>
           <p
-            className="sc-gzVnrw eLePjw sc-bxivhb jrPpOY"
+            className="sc-htoDjs giMnYx sc-ifAKCX evienz"
           >
             14
           </p>
         </div>
       </div>
       <p
-        className="sc-bxivhb kDFTQb"
+        className="sc-dnqmqq jyqbrI sc-ifAKCX dWGyF"
       >
         Clear sky
       </p>
     </li>
     <li
-      className="sc-ifAKCX cjqzFS"
+      className="sc-EHOje ersua"
     >
       <p
-        className="sc-bxivhb dOVVdo"
+        className="sc-ifAKCX hKdhvO"
       >
         Thursday
       </p>
       <div
-        className="sc-EHOje jqKkr"
+        className="sc-bZQynM dmFkjk"
       >
         <WeatherIcon
           small={true}
         />
         <div
-          className="sc-bZQynM hJrpdX"
+          className="sc-gzVnrw jkMAnm"
         >
           <p
-            className="sc-gzVnrw eLePjw sc-bxivhb dOVVdo"
+            className="sc-htoDjs giMnYx sc-ifAKCX hKdhvO"
           >
             20
           </p>
           <p
-            className="sc-gzVnrw eLePjw sc-bxivhb jrPpOY"
+            className="sc-htoDjs giMnYx sc-ifAKCX evienz"
           >
             14
           </p>
         </div>
       </div>
       <p
-        className="sc-bxivhb kDFTQb"
+        className="sc-dnqmqq jyqbrI sc-ifAKCX dWGyF"
       >
         Clear sky
       </p>
