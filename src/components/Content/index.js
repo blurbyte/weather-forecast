@@ -1,3 +1,6 @@
+// General purpose wrapper
+// Centers content and sets consistent width
+
 import styled from 'styled-components';
 
 const Content = styled.div`

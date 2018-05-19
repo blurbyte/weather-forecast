@@ -1,3 +1,6 @@
+// Fetch data from API and passes it to children
+// Iplemented with render prop pattern
+
 import { Component } from 'react';
 import PropTypes from 'prop-types';
 

@@ -1,3 +1,6 @@
+// Fetch wrappers with baked in API strings and key (should be moved to .env lately)
+// Data is normalized after fetch
+
 import normalizeCurrentWeather from '../utils/normalizeCurrentWeather';
 import normalizeFiveDayForecast from '../utils/normalizeFiveDayForecast';
 

@@ -1,3 +1,6 @@
+// Functional pointer-free programming approach with ramda
+// 5 day 3-hour forecast turned into 5 day daily forecast
+
 import compose from 'ramda/src/compose';
 import filter from 'ramda/src/filter';
 import slice from 'ramda/src/slice';

@@ -1,3 +1,5 @@
+// Collection of handcrafted SVG icons
+
 export { default as BrokenClouds } from './BrokenClouds';
 export { default as ClearSkyDay } from './ClearSkyDay';
 export { default as FewClouds } from './FewClouds';
