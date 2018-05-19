@@ -3,6 +3,8 @@ import renderer from 'react-test-renderer';
 
 import SunInfo from '../SunInfo';
 
+jest.mock('../Label', () => 'Label');
+
 test('renders correctly', () => {
   const props = {
     sunrise: 1526714160,

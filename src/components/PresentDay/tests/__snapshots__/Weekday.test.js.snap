@@ -2,16 +2,14 @@
 
 exports[`renders correctly 1`] = `
 <div
-  className="sc-bxivhb ElINa sc-bwzfXH kRemwO"
+  className="sc-htpNat hKggGN sc-bwzfXH kRemwO"
 >
   <p
-    className="sc-bdVaJa hPriLU"
+    className="sc-bdVaJa cRsIjw"
   >
-    <span
-      className="sc-htpNat dhxxga"
-    >
+    <Label>
       Today
-    </span>
+    </Label>
      
     Sunday
   </p>

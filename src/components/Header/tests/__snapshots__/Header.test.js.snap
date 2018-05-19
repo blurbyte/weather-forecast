@@ -2,10 +2,10 @@
 
 exports[`renders correctly 1`] = `
 <header
-  className="sc-htpNat eATayj"
+  className="sc-htpNat cNAIwk"
 >
   <div
-    className="sc-bwzfXH fWldzL sc-bdVaJa hNXGXU"
+    className="sc-bwzfXH ieWurs sc-bdVaJa hNXGXU"
   >
     <Logo />
   </div>

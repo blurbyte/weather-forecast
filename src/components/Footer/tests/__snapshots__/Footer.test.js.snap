@@ -2,13 +2,13 @@
 
 exports[`renders correctly 1`] = `
 <footer
-  className="sc-bxivhb clrppL"
+  className="sc-bxivhb dECaob"
 >
   <div
     className="sc-htpNat kqsjaR sc-bwzfXH ezMGVG"
   >
     <p
-      className="sc-bdVaJa bYstwH"
+      className="sc-bdVaJa bVJipy"
     >
       Data from OpenWeatherMap
     </p>

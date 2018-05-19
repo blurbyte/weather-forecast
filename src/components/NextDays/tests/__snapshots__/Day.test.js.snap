@@ -2,39 +2,41 @@
 
 exports[`renders correctly 1`] = `
 <li
-  className="sc-bwzfXH izCWbQ"
+  className="sc-bdVaJa dTrwUw"
 >
-  <p
-    className="sc-bdVaJa hPriLU"
+  <Text
+    big={true}
   >
     Monday
-  </p>
+  </Text>
   <div
-    className="sc-htpNat guTXPI"
+    className="sc-bwzfXH fzCtd"
   >
     <WeatherIcon
       small={true}
       weatherId={800}
     />
     <div
-      className="sc-bxivhb gejLxX"
+      className="sc-htpNat fECQxq"
     >
-      <p
-        className="sc-ifAKCX khrclq sc-bdVaJa hPriLU"
+      <Text
+        big={true}
+        className="sc-bxivhb FCqdZ"
       >
         19
-      </p>
-      <p
-        className="sc-ifAKCX khrclq sc-bdVaJa dHtVOb"
+      </Text>
+      <Text
+        big={true}
+        className="sc-bxivhb FCqdZ"
       >
         10
-      </p>
+      </Text>
     </div>
   </div>
-  <p
-    className="sc-EHOje jrDLch sc-bdVaJa jxXTGO"
+  <Text
+    className="sc-ifAKCX gGgqiF"
   >
     clear sky
-  </p>
+  </Text>
 </li>
 `;

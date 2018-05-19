@@ -3,7 +3,6 @@
 exports[`renders correctly 1`] = `
 .c1 {
   font-size: 1.4rem;
-  color: #222222;
   margin: 0;
   text-transform: none;
 }

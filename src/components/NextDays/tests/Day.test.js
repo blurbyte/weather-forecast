@@ -4,6 +4,7 @@ import renderer from 'react-test-renderer';
 import Day from '../Day';
 
 jest.mock('../../WeatherIcon', () => 'WeatherIcon');
+jest.mock('../../Text', () => 'Text');
 
 test('renders correctly', () => {
   const props = {

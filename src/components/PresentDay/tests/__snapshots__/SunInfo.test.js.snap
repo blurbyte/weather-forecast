@@ -5,24 +5,20 @@ exports[`renders correctly 1`] = `
   className="sc-bdVaJa iInree"
 >
   <p
-    className="sc-htpNat jsqgjC sc-bwzfXH dcdldk"
+    className="sc-htpNat jsqgjC sc-bwzfXH hAPHIK"
   >
-    <span
-      className="sc-bxivhb iBbKEM"
-    >
+    <Label>
       Sunrise
-    </span>
+    </Label>
      
     09:16
   </p>
   <p
-    className="sc-htpNat jsqgjC sc-bwzfXH dcdldk"
+    className="sc-htpNat jsqgjC sc-bwzfXH hAPHIK"
   >
-    <span
-      className="sc-bxivhb iBbKEM"
-    >
+    <Label>
       Sunset
-    </span>
+    </Label>
      
     23:16
   </p>

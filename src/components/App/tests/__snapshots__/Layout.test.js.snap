@@ -2,11 +2,13 @@
 
 exports[`renders correctly 1`] = `
 .c0 {
-  height: 100vh;
+  min-height: 100vh;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: auto 1fr auto;
   grid-template-areas: 'header' 'main' 'footer';
+  -webkit-transition: background-color 0.45s linear;
+  transition: background-color 0.45s linear;
 }
 
 <div

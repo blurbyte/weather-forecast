@@ -1,6 +1,8 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
+import { ThemeProvider } from 'styled-components';
 
+import { dayTheme } from '../../../styles/themes';
 import Days from '../Days';
 
 jest.mock('../../WeatherIcon', () => 'WeatherIcon');
@@ -27,6 +29,10 @@ test('renders correctly', () => {
     }
   };
 
-  const component = renderer.create(<Days days={days} />);
+  const component = renderer.create(
+    <ThemeProvider theme={dayTheme}>
+      <Days days={days} />
+    </ThemeProvider>
+  );
   expect(component.toJSON()).toMatchSnapshot();
 });

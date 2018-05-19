@@ -5,7 +5,7 @@ exports[`renders correctly 1`] = `
   className="sc-bxivhb cGzfDh sc-htpNat hClEhO"
 >
   <h1
-    className="sc-ifAKCX cbuSzP"
+    className="sc-ifAKCX dZStwc"
   >
     London
   </h1>
@@ -21,7 +21,7 @@ exports[`renders correctly 1`] = `
       weatherId={800}
     />
     <p
-      className="sc-bZQynM hqsEVf"
+      className="sc-bZQynM laSBUb"
     >
       12
       °
@@ -34,12 +34,12 @@ exports[`renders correctly 1`] = `
       className="sc-bdVaJa hPriLU"
     >
       <span
-        className="sc-htoDjs lgqaic"
+        className="sc-htoDjs loeAKY"
       >
         Today
       </span>
        
-      Saturday
+      Sunday
     </p>
   </div>
   <div
@@ -49,7 +49,7 @@ exports[`renders correctly 1`] = `
       className="sc-iwsKbI drgGaZ sc-bdVaJa jxXTGO"
     >
       <span
-        className="sc-htoDjs lgqaic"
+        className="sc-htoDjs loeAKY"
       >
         Sunrise
       </span>
@@ -60,7 +60,7 @@ exports[`renders correctly 1`] = `
       className="sc-iwsKbI drgGaZ sc-bdVaJa jxXTGO"
     >
       <span
-        className="sc-htoDjs lgqaic"
+        className="sc-htoDjs loeAKY"
       >
         Sunset
       </span>
@@ -75,7 +75,7 @@ exports[`renders correctly 1`] = `
       className="sc-iwsKbI drgGaZ sc-bdVaJa jxXTGO"
     >
       <span
-        className="sc-htoDjs lgqaic"
+        className="sc-htoDjs loeAKY"
       >
         Wind
       </span>
@@ -87,7 +87,7 @@ exports[`renders correctly 1`] = `
       className="sc-iwsKbI drgGaZ sc-bdVaJa jxXTGO"
     >
       <span
-        className="sc-htoDjs lgqaic"
+        className="sc-htoDjs loeAKY"
       >
         Humidity
       </span>
@@ -99,7 +99,7 @@ exports[`renders correctly 1`] = `
       className="sc-iwsKbI drgGaZ sc-bdVaJa jxXTGO"
     >
       <span
-        className="sc-htoDjs lgqaic"
+        className="sc-htoDjs loeAKY"
       >
         Pressure
       </span>

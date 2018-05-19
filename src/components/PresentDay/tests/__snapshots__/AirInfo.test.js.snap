@@ -5,37 +5,31 @@ exports[`renders correctly 1`] = `
   className="sc-bdVaJa iInree"
 >
   <p
-    className="sc-htpNat jsqgjC sc-bwzfXH dcdldk"
+    className="sc-htpNat jsqgjC sc-bwzfXH hAPHIK"
   >
-    <span
-      className="sc-bxivhb iBbKEM"
-    >
+    <Label>
       Wind
-    </span>
+    </Label>
      
     5
      m/s
   </p>
   <p
-    className="sc-htpNat jsqgjC sc-bwzfXH dcdldk"
+    className="sc-htpNat jsqgjC sc-bwzfXH hAPHIK"
   >
-    <span
-      className="sc-bxivhb iBbKEM"
-    >
+    <Label>
       Humidity
-    </span>
+    </Label>
      
     76
      %
   </p>
   <p
-    className="sc-htpNat jsqgjC sc-bwzfXH dcdldk"
+    className="sc-htpNat jsqgjC sc-bwzfXH hAPHIK"
   >
-    <span
-      className="sc-bxivhb iBbKEM"
-    >
+    <Label>
       Pressure
-    </span>
+    </Label>
      
     1021
      hpa

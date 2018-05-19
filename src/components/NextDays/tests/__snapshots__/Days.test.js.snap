@@ -28,7 +28,7 @@ exports[`renders correctly 1`] = `
           19
         </p>
         <p
-          className="sc-EHOje dbfoHw sc-bwzfXH bkHTLu"
+          className="sc-EHOje dbfoHw sc-bwzfXH jWQGhq"
         >
           10
         </p>
@@ -64,7 +64,7 @@ exports[`renders correctly 1`] = `
           14
         </p>
         <p
-          className="sc-EHOje dbfoHw sc-bwzfXH bkHTLu"
+          className="sc-EHOje dbfoHw sc-bwzfXH jWQGhq"
         >
           11
         </p>
@@ -100,7 +100,7 @@ exports[`renders correctly 1`] = `
           11
         </p>
         <p
-          className="sc-EHOje dbfoHw sc-bwzfXH bkHTLu"
+          className="sc-EHOje dbfoHw sc-bwzfXH jWQGhq"
         >
           9
         </p>

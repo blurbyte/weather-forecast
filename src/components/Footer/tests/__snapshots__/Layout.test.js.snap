@@ -3,7 +3,7 @@
 exports[`renders correctly 1`] = `
 .c0 {
   height: 6rem;
-  border-top: 1px solid rgba(34,34,34,0.3);
+  border-top: 1px solid rgba(34,34,34,0.5);
   grid-area: footer;
 }
 
