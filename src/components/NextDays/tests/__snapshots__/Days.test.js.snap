@@ -1,29 +1,116 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`renders correctly 1`] = `
-.c0 {
-  display: grid;
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  grid-template-columns: repeat(4,1fr);
-  border-top: 1px solid #222222;
-}
-
-@media (max-width:40em) {
-  .c0 {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-flex-direction: column;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    padding-top: 1rem;
-  }
-}
-
 <ul
-  className="c0"
-/>
+  className="sc-bdVaJa eqmkZd"
+>
+  <li
+    className="sc-htpNat eywmEU"
+  >
+    <p
+      className="sc-bwzfXH iezheg"
+    >
+      Monday
+    </p>
+    <div
+      className="sc-bxivhb clTIXs"
+    >
+      <WeatherIcon
+        small={true}
+        weatherId={800}
+      />
+      <div
+        className="sc-ifAKCX hNdbxq"
+      >
+        <p
+          className="sc-EHOje dbfoHw sc-bwzfXH iezheg"
+        >
+          19
+        </p>
+        <p
+          className="sc-EHOje dbfoHw sc-bwzfXH bkHTLu"
+        >
+          10
+        </p>
+      </div>
+    </div>
+    <p
+      className="sc-bZQynM bPaBwE sc-bwzfXH dcdldk"
+    >
+      clear sky
+    </p>
+  </li>
+  <li
+    className="sc-htpNat eywmEU"
+  >
+    <p
+      className="sc-bwzfXH iezheg"
+    >
+      Thursday
+    </p>
+    <div
+      className="sc-bxivhb clTIXs"
+    >
+      <WeatherIcon
+        small={true}
+        weatherId={800}
+      />
+      <div
+        className="sc-ifAKCX hNdbxq"
+      >
+        <p
+          className="sc-EHOje dbfoHw sc-bwzfXH iezheg"
+        >
+          14
+        </p>
+        <p
+          className="sc-EHOje dbfoHw sc-bwzfXH bkHTLu"
+        >
+          11
+        </p>
+      </div>
+    </div>
+    <p
+      className="sc-bZQynM bPaBwE sc-bwzfXH dcdldk"
+    >
+      clear sky
+    </p>
+  </li>
+  <li
+    className="sc-htpNat eywmEU"
+  >
+    <p
+      className="sc-bwzfXH iezheg"
+    >
+      Saturday
+    </p>
+    <div
+      className="sc-bxivhb clTIXs"
+    >
+      <WeatherIcon
+        small={true}
+        weatherId={801}
+      />
+      <div
+        className="sc-ifAKCX hNdbxq"
+      >
+        <p
+          className="sc-EHOje dbfoHw sc-bwzfXH iezheg"
+        >
+          11
+        </p>
+        <p
+          className="sc-EHOje dbfoHw sc-bwzfXH bkHTLu"
+        >
+          9
+        </p>
+      </div>
+    </div>
+    <p
+      className="sc-bZQynM bPaBwE sc-bwzfXH dcdldk"
+    >
+      clouds
+    </p>
+  </li>
+</ul>
 `;

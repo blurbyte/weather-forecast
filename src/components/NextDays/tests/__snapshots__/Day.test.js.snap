@@ -7,14 +7,14 @@ exports[`renders correctly 1`] = `
   <p
     className="sc-bdVaJa hPriLU"
   >
-    Thursday
+    Monday
   </p>
   <div
     className="sc-htpNat guTXPI"
   >
     <WeatherIcon
       small={true}
-      weatherId={801}
+      weatherId={800}
     />
     <div
       className="sc-bxivhb gejLxX"
@@ -22,19 +22,19 @@ exports[`renders correctly 1`] = `
       <p
         className="sc-ifAKCX khrclq sc-bdVaJa hPriLU"
       >
-        20
+        19
       </p>
       <p
         className="sc-ifAKCX khrclq sc-bdVaJa dHtVOb"
       >
-        14
+        10
       </p>
     </div>
   </div>
   <p
-    className="sc-EHOje imawgo sc-bdVaJa jxXTGO"
+    className="sc-EHOje jrDLch sc-bdVaJa jxXTGO"
   >
-    Clear sky
+    clear sky
   </p>
 </li>
 `;

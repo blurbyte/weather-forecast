@@ -7,150 +7,27 @@ exports[`renders correctly 1`] = `
   <ul
     className="sc-bxivhb hsyjVa"
   >
-    <li
-      className="sc-EHOje ersua"
-    >
-      <p
-        className="sc-ifAKCX hKdhvO"
-      >
-        Thursday
-      </p>
-      <div
-        className="sc-bZQynM dmFkjk"
-      >
-        <WeatherIcon
-          small={true}
-          weatherId={801}
-        />
-        <div
-          className="sc-gzVnrw jkMAnm"
-        >
-          <p
-            className="sc-htoDjs giMnYx sc-ifAKCX hKdhvO"
-          >
-            20
-          </p>
-          <p
-            className="sc-htoDjs giMnYx sc-ifAKCX evienz"
-          >
-            14
-          </p>
-        </div>
-      </div>
-      <p
-        className="sc-dnqmqq jyqbrI sc-ifAKCX dWGyF"
-      >
-        Clear sky
-      </p>
-    </li>
-    <li
-      className="sc-EHOje ersua"
-    >
-      <p
-        className="sc-ifAKCX hKdhvO"
-      >
-        Thursday
-      </p>
-      <div
-        className="sc-bZQynM dmFkjk"
-      >
-        <WeatherIcon
-          small={true}
-          weatherId={801}
-        />
-        <div
-          className="sc-gzVnrw jkMAnm"
-        >
-          <p
-            className="sc-htoDjs giMnYx sc-ifAKCX hKdhvO"
-          >
-            20
-          </p>
-          <p
-            className="sc-htoDjs giMnYx sc-ifAKCX evienz"
-          >
-            14
-          </p>
-        </div>
-      </div>
-      <p
-        className="sc-dnqmqq jyqbrI sc-ifAKCX dWGyF"
-      >
-        Clear sky
-      </p>
-    </li>
-    <li
-      className="sc-EHOje ersua"
-    >
-      <p
-        className="sc-ifAKCX hKdhvO"
-      >
-        Thursday
-      </p>
-      <div
-        className="sc-bZQynM dmFkjk"
-      >
-        <WeatherIcon
-          small={true}
-          weatherId={801}
-        />
-        <div
-          className="sc-gzVnrw jkMAnm"
-        >
-          <p
-            className="sc-htoDjs giMnYx sc-ifAKCX hKdhvO"
-          >
-            20
-          </p>
-          <p
-            className="sc-htoDjs giMnYx sc-ifAKCX evienz"
-          >
-            14
-          </p>
-        </div>
-      </div>
-      <p
-        className="sc-dnqmqq jyqbrI sc-ifAKCX dWGyF"
-      >
-        Clear sky
-      </p>
-    </li>
-    <li
-      className="sc-EHOje ersua"
-    >
-      <p
-        className="sc-ifAKCX hKdhvO"
-      >
-        Thursday
-      </p>
-      <div
-        className="sc-bZQynM dmFkjk"
-      >
-        <WeatherIcon
-          small={true}
-          weatherId={801}
-        />
-        <div
-          className="sc-gzVnrw jkMAnm"
-        >
-          <p
-            className="sc-htoDjs giMnYx sc-ifAKCX hKdhvO"
-          >
-            20
-          </p>
-          <p
-            className="sc-htoDjs giMnYx sc-ifAKCX evienz"
-          >
-            14
-          </p>
-        </div>
-      </div>
-      <p
-        className="sc-dnqmqq jyqbrI sc-ifAKCX dWGyF"
-      >
-        Clear sky
-      </p>
-    </li>
+    <Day
+      description="clear sky"
+      tempMax={18.75}
+      tempMin={9.7}
+      timestamp="5/21/2018"
+      weatherId={800}
+    />
+    <Day
+      description="clear sky"
+      tempMax={14.3}
+      tempMin={11.2}
+      timestamp="6/21/2018"
+      weatherId={800}
+    />
+    <Day
+      description="clouds"
+      tempMax={11.23}
+      tempMin={9}
+      timestamp="7/21/2018"
+      weatherId={801}
+    />
   </ul>
 </section>
 `;

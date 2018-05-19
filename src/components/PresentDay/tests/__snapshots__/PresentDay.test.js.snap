@@ -1,0 +1,112 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<section
+  className="sc-bxivhb cGzfDh sc-htpNat hClEhO"
+>
+  <h1
+    className="sc-ifAKCX cbuSzP"
+  >
+    London
+  </h1>
+  <p
+    className="sc-bdVaJa hPriLU"
+  >
+    clear sky
+  </p>
+  <div
+    className="sc-gzVnrw bsdMms sc-EHOje leSkOi"
+  >
+    <WeatherIcon
+      weatherId={800}
+    />
+    <p
+      className="sc-bZQynM hqsEVf"
+    >
+      12
+      °
+    </p>
+  </div>
+  <div
+    className="sc-dnqmqq eexdWW sc-EHOje leSkOi"
+  >
+    <p
+      className="sc-bdVaJa hPriLU"
+    >
+      <span
+        className="sc-htoDjs lgqaic"
+      >
+        Today
+      </span>
+       
+      Saturday
+    </p>
+  </div>
+  <div
+    className="sc-EHOje leSkOi"
+  >
+    <p
+      className="sc-iwsKbI drgGaZ sc-bdVaJa jxXTGO"
+    >
+      <span
+        className="sc-htoDjs lgqaic"
+      >
+        Sunrise
+      </span>
+       
+      09:16
+    </p>
+    <p
+      className="sc-iwsKbI drgGaZ sc-bdVaJa jxXTGO"
+    >
+      <span
+        className="sc-htoDjs lgqaic"
+      >
+        Sunset
+      </span>
+       
+      23:16
+    </p>
+  </div>
+  <div
+    className="sc-EHOje leSkOi"
+  >
+    <p
+      className="sc-iwsKbI drgGaZ sc-bdVaJa jxXTGO"
+    >
+      <span
+        className="sc-htoDjs lgqaic"
+      >
+        Wind
+      </span>
+       
+      2
+       m/s
+    </p>
+    <p
+      className="sc-iwsKbI drgGaZ sc-bdVaJa jxXTGO"
+    >
+      <span
+        className="sc-htoDjs lgqaic"
+      >
+        Humidity
+      </span>
+       
+      45
+       %
+    </p>
+    <p
+      className="sc-iwsKbI drgGaZ sc-bdVaJa jxXTGO"
+    >
+      <span
+        className="sc-htoDjs lgqaic"
+      >
+        Pressure
+      </span>
+       
+      1024
+       hpa
+    </p>
+  </div>
+</section>
+`;
