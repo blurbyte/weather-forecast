@@ -13,14 +13,15 @@ class App extends Component {
     return (
       <Layout>
         <Header />
-        <Forecast city="Gdańsk,PL">
-          {({ presentDay }) => (
-            <MainContent>
-              <div>{presentDay.temp}</div>
-              <PresentDay />
-              <NextDays />
-            </MainContent>
-          )}
+        <Forecast city="Barcelona,ES">
+          {({ presentDay, loading }) =>
+            loading ? null : (
+              <MainContent>
+                <PresentDay {...presentDay} />
+                <NextDays />
+              </MainContent>
+            )
+          }
         </Forecast>
         <Footer />
       </Layout>

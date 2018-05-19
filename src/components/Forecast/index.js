@@ -15,13 +15,16 @@ class Forecast extends Component {
 
   state = {
     presentDay: {},
-    nextDays: {}
+    nextDays: {},
+    loading: true
   };
 
   fetchForecast = async city => {
+    this.setState({ loading: true });
+
     const [presentDay, nextDays] = await Promise.all([getCurrentWeather(city), getFiveDayForecast(city)]);
 
-    this.setState({ presentDay, nextDays });
+    this.setState({ presentDay, nextDays, loading: false });
   };
 
   componentDidMount() {
