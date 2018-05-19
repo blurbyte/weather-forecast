@@ -3,6 +3,7 @@ import normalizeCurrentWeather from '../normalizeCurrentWeather';
 test('normalizeCurrentWeather() maps api response to simpler structure', () => {
   const initialData = {
     base: 'stations',
+    name: 'London',
     clouds: {
       all: 0
     },
@@ -41,7 +42,8 @@ test('normalizeCurrentWeather() maps api response to simpler structure', () => {
     weatherId: 800,
     description: 'clear sky',
     sunrise: 1526702551,
-    sunset: 1526759546
+    sunset: 1526759546,
+    name: 'London'
   };
 
   expect(normalizeCurrentWeather(initialData)).toEqual(expectedData);

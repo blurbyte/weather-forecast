@@ -8,7 +8,8 @@ const normalizeCurrentWeather = currentWeather => ({
   weatherId: currentWeather.weather[0].id,
   description: currentWeather.weather[0].description,
   sunrise: currentWeather.sys.sunrise,
-  sunset: currentWeather.sys.sunset
+  sunset: currentWeather.sys.sunset,
+  name: currentWeather.name
 });
 
 export default normalizeCurrentWeather;
