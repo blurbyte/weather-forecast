@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 
 const Temperature = styled.p`
+  color: ${props => props.theme.primary};
   font-family: 'Cardo', serif;
   line-height: 1;
   font-weight: 700;

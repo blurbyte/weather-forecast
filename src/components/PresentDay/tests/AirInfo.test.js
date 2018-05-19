@@ -3,6 +3,8 @@ import renderer from 'react-test-renderer';
 
 import AirInfo from '../AirInfo';
 
+jest.mock('../Label', () => 'Label');
+
 test('renders correctly', () => {
   const props = {
     wind: 4.6,

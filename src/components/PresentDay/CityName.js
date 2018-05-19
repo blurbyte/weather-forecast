@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 
 const CityName = styled.h1`
+  color: ${props => props.theme.primary};
   font-family: 'Cardo', serif;
   line-height: 1;
   font-weight: 700;
