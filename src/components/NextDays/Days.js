@@ -1,20 +1,17 @@
-import styled from 'styled-components';
+import React from 'react';
+import PropTypes from 'prop-types';
 
-import media from '../../styles/media';
+import List from './List';
+import Day from './Day';
 
-const Days = styled.ul`
-  display: grid;
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  grid-template-columns: repeat(4, 1fr);
-  border-top: 1px solid #222222;
+const Days = ({ days }) => {
+  const dates = Object.keys(days);
 
-  ${media.tablet`
-    display: flex;
-    flex-direction: column;
-    padding-top: 1rem;
-  `};
-`;
+  return <List>{dates.map(date => <Day key={date} timestamp={date} {...days[date]} />)}</List>;
+};
+
+Days.propTypes = {
+  days: PropTypes.object.isRequired
+};
 
 export default Days;

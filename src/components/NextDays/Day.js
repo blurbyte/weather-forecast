@@ -1,6 +1,9 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
+import weekday from '../../utils/weekday';
+import removeDecimals from '../../utils/removeDecimals';
 import media from '../../styles/media';
 import Text from '../Text';
 import WeatherIcon from '../WeatherIcon';
@@ -10,23 +13,33 @@ import Temperatures from './Temperatures';
 import Temperature from './Temperature';
 
 const Summary = styled(Text)`
+  text-transform: capitalize;
+
   ${media.tablet`
     display: none;
   `};
 `;
 
-const Day = () => (
+const Day = ({ weatherId, description, tempMax, tempMin, timestamp }) => (
   <ListItem>
-    <Text big>Thursday</Text>
+    <Text big>{weekday(timestamp)}</Text>
     <Info>
-      <WeatherIcon weatherId={801} small />
+      <WeatherIcon weatherId={weatherId} small />
       <Temperatures>
-        <Temperature>20</Temperature>
-        <Temperature dimmed>14</Temperature>
+        <Temperature>{removeDecimals(tempMax)}</Temperature>
+        <Temperature dimmed>{removeDecimals(tempMin)}</Temperature>
       </Temperatures>
     </Info>
-    <Summary>Clear sky</Summary>
+    <Summary>{description}</Summary>
   </ListItem>
 );
+
+Day.propTypes = {
+  weatherId: PropTypes.number.isRequired,
+  description: PropTypes.string.isRequired,
+  tempMax: PropTypes.number.isRequired,
+  tempMin: PropTypes.number.isRequired,
+  timestamp: PropTypes.string.isRequired
+};
 
 export default Day;

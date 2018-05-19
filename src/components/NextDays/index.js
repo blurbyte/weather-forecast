@@ -1,18 +1,17 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 import Content from './Content';
 import Days from './Days';
-import Day from './Day';
 
-const NextDays = () => (
+const NextDays = ({ days }) => (
   <Content>
-    <Days>
-      <Day />
-      <Day />
-      <Day />
-      <Day />
-    </Days>
+    <Days days={days} />
   </Content>
 );
+
+NextDays.propTypes = {
+  days: PropTypes.object.isRequired
+};
 
 export default NextDays;
