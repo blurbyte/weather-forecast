@@ -13,7 +13,7 @@ class App extends Component {
     return (
       <Layout>
         <Header />
-        <Forecast city="Paris,FR">
+        <Forecast city="Gdańsk,PL">
           {({ presentDay, loading }) =>
             loading ? null : (
               <MainContent>

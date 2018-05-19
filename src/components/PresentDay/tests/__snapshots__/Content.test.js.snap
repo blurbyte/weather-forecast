@@ -20,6 +20,11 @@ exports[`renders correctly 1`] = `
   -ms-flex-align: center;
   align-items: center;
   padding: 4rem 2rem;
+  -webkit-animation: bAhxRS 0.35s ease-out forwards;
+  animation: bAhxRS 0.35s ease-out forwards;
+  opacity: 0;
+  -webkit-animation-delay: 0.15s;
+  animation-delay: 0.15s;
 }
 
 @media (max-width:26.25em) {

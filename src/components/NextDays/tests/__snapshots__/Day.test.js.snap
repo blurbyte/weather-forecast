@@ -14,6 +14,7 @@ exports[`renders correctly 1`] = `
   >
     <WeatherIcon
       small={true}
+      weatherId={801}
     />
     <div
       className="sc-bxivhb gejLxX"
