@@ -9,6 +9,7 @@ import curry from 'ramda/src/curry';
 import shortDate from './shortDate';
 
 // Removes entries with provided day
+// Since current weather is get with another api call
 // Used mainly with present day timestamp
 export const noProvidedDay = curry((timestamp, days) =>
   filter(day => shortDate(day.dt * 1000) > shortDate(timestamp), days)
@@ -39,11 +40,14 @@ export const lowestTemperature = day =>
 // Removes all not relevent data
 // Gets weather id and description beased on first entry of the given day
 export const transformDay = day => ({
-  id: day[0].weather[0].id,
+  weatherId: day[0].weather[0].id,
   description: day[0].weather[0].description,
   tempMax: highestTemperature(day),
   tempMin: lowestTemperature(day)
 });
 
 // Greatly simplifies whole five day forecast data structure
-export const normalizeFiveDayForecast = compose(map(transformDay), groupByDaytime, fourDays(8), noProvidedDay);
+// Accepts timestamp and list days
+const normalizeFiveDayForecast = compose(map(transformDay), groupByDaytime, fourDays(8), noProvidedDay);
+
+export default normalizeFiveDayForecast;

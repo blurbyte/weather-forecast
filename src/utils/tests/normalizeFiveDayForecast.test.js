@@ -1,11 +1,10 @@
-import {
+import normalizeFiveDayForecast, {
   noProvidedDay,
   fourDays,
   groupByDaytime,
   highestTemperature,
   lowestTemperature,
-  transformDay,
-  normalizeFiveDayForecast
+  transformDay
 } from '../normalizeFiveDayForecast';
 
 test('noSingleDay() removes all entries of provided day from a list', () => {
@@ -261,7 +260,7 @@ test('transformDay() flattens single day and leave only relevant data', () => {
   ];
 
   const expectedData = {
-    id: 800,
+    weatherId: 800,
     description: 'clear sky',
     tempMax: 16.1,
     tempMin: 13.39
@@ -403,13 +402,13 @@ test('normalizeFiveDayForecast() normalizes fetched five day forecast', () => {
 
   const normalizedData = {
     '5/20/2018': {
-      id: 800,
+      weatherId: 800,
       description: 'clear sky',
       tempMin: 10.3,
       tempMax: 18.45
     },
     '5/21/2018': {
-      id: 801,
+      weatherId: 801,
       description: 'few clouds',
       tempMin: 15.99,
       tempMax: 19.45
