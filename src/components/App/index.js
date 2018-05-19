@@ -13,12 +13,12 @@ class App extends Component {
     return (
       <Layout>
         <Header />
-        <Forecast city="Gdańsk,PL">
-          {({ presentDay, loading }) =>
+        <Forecast city="Paris,FR">
+          {({ presentDay, nextDays, loading }) =>
             loading ? null : (
               <MainContent>
                 <PresentDay {...presentDay} />
-                <NextDays />
+                <NextDays days={nextDays} />
               </MainContent>
             )
           }
