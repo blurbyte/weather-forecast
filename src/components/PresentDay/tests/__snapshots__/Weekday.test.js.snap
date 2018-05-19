@@ -12,7 +12,8 @@ exports[`renders correctly 1`] = `
     >
       Today
     </span>
-     Wednesday
+     
+    Sunday
   </p>
 </div>
 `;

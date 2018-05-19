@@ -20,7 +20,8 @@ exports[`renders correctly 1`] = `
   <p
     className="sc-htpNat dGZyVn"
   >
-    19°
+    12
+    °
   </p>
 </div>
 `;

@@ -12,7 +12,8 @@ exports[`renders correctly 1`] = `
     >
       Sunrise
     </span>
-     5:50
+     
+    09:16
   </p>
   <p
     className="sc-htpNat jsqgjC sc-bwzfXH dcdldk"
@@ -22,7 +23,8 @@ exports[`renders correctly 1`] = `
     >
       Sunset
     </span>
-     20:45
+     
+    23:16
   </p>
 </div>
 `;

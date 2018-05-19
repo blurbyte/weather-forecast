@@ -1,21 +1,29 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
+import removeDecimals from '../../utils/removeDecimals';
 import Row from '../Row';
 import InfoText from './InfoText';
 import Label from './Label';
 
-const AirInfo = () => (
+const AirInfo = ({ wind, humidity, pressure }) => (
   <Row>
     <InfoText>
-      <Label>Wind</Label> 5.1 m/s
+      <Label>Wind</Label> {removeDecimals(wind)} m/s
     </InfoText>
     <InfoText>
-      <Label>Humidity</Label> 42 %
+      <Label>Humidity</Label> {humidity} %
     </InfoText>
     <InfoText>
-      <Label>Pressure</Label> 1012 hpa
+      <Label>Pressure</Label> {removeDecimals(pressure)} hpa
     </InfoText>
   </Row>
 );
+
+AirInfo.propTypes = {
+  wind: PropTypes.number.isRequired,
+  humidity: PropTypes.number.isRequired,
+  pressure: PropTypes.number.isRequired
+};
 
 export default AirInfo;

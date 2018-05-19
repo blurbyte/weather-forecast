@@ -12,7 +12,9 @@ exports[`renders correctly 1`] = `
     >
       Wind
     </span>
-     5.1 m/s
+     
+    5
+     m/s
   </p>
   <p
     className="sc-htpNat jsqgjC sc-bwzfXH dcdldk"
@@ -22,7 +24,9 @@ exports[`renders correctly 1`] = `
     >
       Humidity
     </span>
-     42 %
+     
+    76
+     %
   </p>
   <p
     className="sc-htpNat jsqgjC sc-bwzfXH dcdldk"
@@ -32,7 +36,9 @@ exports[`renders correctly 1`] = `
     >
       Pressure
     </span>
-     1012 hpa
+     
+    1021
+     hpa
   </p>
 </div>
 `;
