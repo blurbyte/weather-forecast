@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 
+import Forecast from '../Forecast';
 import MainContent from '../MainContent';
 import Header from '../Header';
 import PresentDay from '../PresentDay';
@@ -12,10 +13,15 @@ class App extends Component {
     return (
       <Layout>
         <Header />
-        <MainContent>
-          <PresentDay />
-          <NextDays />
-        </MainContent>
+        <Forecast city="Gdańsk,PL">
+          {({ presentDay }) => (
+            <MainContent>
+              <div>{presentDay.temp}</div>
+              <PresentDay />
+              <NextDays />
+            </MainContent>
+          )}
+        </Forecast>
         <Footer />
       </Layout>
     );

@@ -1,11 +1,12 @@
-import React, { Component } from 'react';
+import { Component } from 'react';
 import PropTypes from 'prop-types';
 
 import { getCurrentWeather, getFiveDayForecast } from '../../services/forecast';
 
 class Forecast extends Component {
   static propTypes = {
-    city: PropTypes.string
+    city: PropTypes.string,
+    children: PropTypes.func.isRequired
   };
 
   static defaultProps = {
@@ -14,7 +15,7 @@ class Forecast extends Component {
 
   state = {
     presentDay: {},
-    nextDays: []
+    nextDays: {}
   };
 
   fetchForecast = async city => {
@@ -28,7 +29,7 @@ class Forecast extends Component {
   }
 
   render() {
-    return <div />;
+    return this.props.children(this.state);
   }
 }
 
