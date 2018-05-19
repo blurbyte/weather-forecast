@@ -11,16 +11,17 @@ const Row = styled(BaseRow)`
   margin-top: 0.4rem;
 `;
 
-const MainInfo = ({ temp, weatherId }) => (
+const MainInfo = ({ temp, weatherId, isDaytime }) => (
   <Row>
-    <WeatherIcon weatherId={weatherId} />
+    <WeatherIcon weatherId={weatherId} isDaytime={isDaytime} />
     <Temperature>{removeDecimals(temp)}&deg;</Temperature>
   </Row>
 );
 
 MainInfo.propTypes = {
   temp: PropTypes.number.isRequired,
-  weatherId: PropTypes.number.isRequired
+  weatherId: PropTypes.number.isRequired,
+  isDaytime: PropTypes.bool.isRequired
 };
 
 export default MainInfo;

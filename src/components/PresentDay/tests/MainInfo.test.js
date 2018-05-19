@@ -6,7 +6,8 @@ import MainInfo from '../MainInfo';
 test('renders correctly', () => {
   const props = {
     temp: 12.34,
-    weatherId: 800
+    weatherId: 800,
+    isDaytime: true
   };
 
   const component = renderer.create(<MainInfo {...props} />);

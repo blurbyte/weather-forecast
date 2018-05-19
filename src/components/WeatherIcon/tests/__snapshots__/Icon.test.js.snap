@@ -4,15 +4,21 @@ exports[`renders BrokenClouds 1`] = `<BrokenClouds />`;
 
 exports[`renders BrokenClouds 2`] = `<BrokenClouds />`;
 
-exports[`renders ClearSky 1`] = `<ClearSkyDay />`;
+exports[`renders ClearSkyDay 1`] = `<ClearSkyDay />`;
 
-exports[`renders ClearSky by default 1`] = `<ClearSkyDay />`;
+exports[`renders ClearSkyDay by default 1`] = `<ClearSkyDay />`;
 
-exports[`renders FewClouds 1`] = `<FewClouds />`;
+exports[`renders ClearSkyNight 1`] = `<ClearSkyNight />`;
+
+exports[`renders FewCloudsDay 1`] = `<FewCloudsDay />`;
+
+exports[`renders FewCloudsNight 1`] = `<FewCloudsNight />`;
 
 exports[`renders Mist 1`] = `<Mist />`;
 
-exports[`renders Rain 1`] = `<Rain />`;
+exports[`renders RainDay 1`] = `<RainDay />`;
+
+exports[`renders RainNight 1`] = `<RainNight />`;
 
 exports[`renders ScatteredClouds 1`] = `<ScatteredClouds />`;
 

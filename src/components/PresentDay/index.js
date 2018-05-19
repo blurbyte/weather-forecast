@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
+import isDaytime from '../../utils/isDaytime';
 import Text from '../Text';
 import Content from './Content';
 import CityName from './CityName';
@@ -13,7 +14,7 @@ const PresentDay = ({ name, description, temp, sunrise, sunset, humidity, wind, 
   <Content>
     <CityName>{name}</CityName>
     <Text big>{description}</Text>
-    <MainInfo temp={temp} weatherId={weatherId} />
+    <MainInfo temp={temp} weatherId={weatherId} isDaytime={isDaytime(sunrise * 1000, sunset * 1000, Date.now())} />
     <Weekday timestamp={Date.now()} />
     <SunInfo sunrise={sunrise} sunset={sunset} />
     <AirInfo wind={wind} humidity={humidity} pressure={pressure} />

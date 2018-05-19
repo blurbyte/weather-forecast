@@ -6,17 +6,25 @@ import Icon from '../Icon';
 jest.mock('../../Icons', () => ({
   BrokenClouds: 'BrokenClouds',
   ClearSkyDay: 'ClearSkyDay',
-  FewClouds: 'FewClouds',
+  ClearSkyNight: 'ClearSkyNight',
+  FewCloudsDay: 'FewCloudsDay',
+  FewCloudsNight: 'FewCloudsNight',
   Mist: 'Mist',
-  Rain: 'Rain',
+  RainDay: 'RainDay',
+  RainNight: 'RainNight',
   ScatteredClouds: 'ScatteredClouds',
   ShowerRain: 'ShowerRain',
   Snow: 'Snow',
   Thunderstorm: 'Thunderstorm'
 }));
 
-test('renders ClearSky', () => {
-  const component = renderer.create(<Icon weatherId={800} />);
+test('renders ClearSkyDay', () => {
+  const component = renderer.create(<Icon weatherId={800} isDaytime />);
+  expect(component.toJSON()).toMatchSnapshot();
+});
+
+test('renders ClearSkyNight', () => {
+  const component = renderer.create(<Icon weatherId={800} isDaytime={false} />);
   expect(component.toJSON()).toMatchSnapshot();
 });
 
@@ -30,8 +38,13 @@ test('renders ShowerRain', () => {
   expect(component.toJSON()).toMatchSnapshot();
 });
 
-test('renders Rain', () => {
-  const component = renderer.create(<Icon weatherId={502} />);
+test('renders RainDay', () => {
+  const component = renderer.create(<Icon weatherId={502} isDaytime />);
+  expect(component.toJSON()).toMatchSnapshot();
+});
+
+test('renders RainNight', () => {
+  const component = renderer.create(<Icon weatherId={514} isDaytime={false} />);
   expect(component.toJSON()).toMatchSnapshot();
 });
 
@@ -45,8 +58,13 @@ test('renders Mist', () => {
   expect(component.toJSON()).toMatchSnapshot();
 });
 
-test('renders FewClouds', () => {
-  const component = renderer.create(<Icon weatherId={801} />);
+test('renders FewCloudsDay', () => {
+  const component = renderer.create(<Icon weatherId={801} isDaytime />);
+  expect(component.toJSON()).toMatchSnapshot();
+});
+
+test('renders FewCloudsNight', () => {
+  const component = renderer.create(<Icon weatherId={801} isDaytime={false} />);
   expect(component.toJSON()).toMatchSnapshot();
 });
 
@@ -63,7 +81,7 @@ test('renders BrokenClouds', () => {
   expect(component.toJSON()).toMatchSnapshot();
 });
 
-test('renders ClearSky by default', () => {
+test('renders ClearSkyDay by default', () => {
   const component = renderer.create(<Icon weatherId={9000} />);
   expect(component.toJSON()).toMatchSnapshot();
 });

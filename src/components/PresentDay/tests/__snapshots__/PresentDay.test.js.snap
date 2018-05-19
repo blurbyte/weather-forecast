@@ -18,6 +18,7 @@ exports[`renders correctly 1`] = `
     className="sc-gzVnrw bsdMms sc-EHOje leSkOi"
   >
     <WeatherIcon
+      isDaytime={false}
       weatherId={800}
     />
     <p
