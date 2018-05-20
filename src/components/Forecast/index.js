@@ -8,12 +8,12 @@ import { getCurrentWeather, getFiveDayForecast } from '../../services/forecast';
 
 class Forecast extends Component {
   static propTypes = {
-    city: PropTypes.string,
+    cityId: PropTypes.number,
     children: PropTypes.func.isRequired
   };
 
   static defaultProps = {
-    city: 'London,GB'
+    city: 2643743
   };
 
   state = {
@@ -22,16 +22,16 @@ class Forecast extends Component {
     loading: true
   };
 
-  fetchForecast = async city => {
+  fetchForecast = async cityId => {
     this.setState({ loading: true });
 
-    const [presentDay, nextDays] = await Promise.all([getCurrentWeather(city), getFiveDayForecast(city)]);
+    const [presentDay, nextDays] = await Promise.all([getCurrentWeather(cityId), getFiveDayForecast(cityId)]);
 
     this.setState({ presentDay, nextDays, loading: false });
   };
 
   componentDidMount() {
-    this.fetchForecast(this.props.city);
+    this.fetchForecast(this.props.cityId);
   }
 
   render() {
