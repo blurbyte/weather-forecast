@@ -5,9 +5,12 @@ exports[`renders correctly 1`] = `
   className="sc-htpNat lbUplj"
 >
   <div
-    className="sc-bwzfXH ieWurs sc-bdVaJa hNXGXU"
+    className="sc-bwzfXH jaPkJ sc-bdVaJa hNXGXU"
   >
     <Logo />
+    <Input
+      placeholder="Your city name"
+    />
   </div>
 </header>
 `;

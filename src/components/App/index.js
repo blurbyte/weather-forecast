@@ -14,7 +14,7 @@ import Layout from './Layout';
 class App extends Component {
   render() {
     return (
-      <Forecast city="Madrid,ES">
+      <Forecast city="Berlin,DE">
         {({ presentDay, nextDays, loading }) =>
           loading ? null : (
             <ThemeProvider

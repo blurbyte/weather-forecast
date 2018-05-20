@@ -4,6 +4,7 @@ import renderer from 'react-test-renderer';
 import Header from '../index';
 
 jest.mock('../Logo', () => 'Logo');
+jest.mock('../../Input', () => 'Input');
 
 test('renders correctly', () => {
   const component = renderer.create(<Header />);
