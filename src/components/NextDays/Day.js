@@ -4,8 +4,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
-import weekday from '../../utils/weekday';
-import removeDecimals from '../../utils/removeDecimals';
+import { weekday, removeDecimals } from '../../utils';
 import media from '../../styles/media';
 import Text from '../Text';
 import WeatherIcon from '../WeatherIcon';

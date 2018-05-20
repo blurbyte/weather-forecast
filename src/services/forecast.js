@@ -1,9 +1,7 @@
 // Fetch wrappers with baked in API strings and key (should be moved to .env lately)
 // Data is normalized after fetch
 
-import normalizeCurrentWeather from '../utils/normalizeCurrentWeather';
-import normalizeFiveDayForecast from '../utils/normalizeFiveDayForecast';
-import normalizeCities from '../utils/normalizeCities';
+import { normalizeCurrentWeather, normalizeFiveDayForecast, normalizeCities } from '../utils';
 
 const API_KEY = '980482225333edda41920c0a2806ba63';
 

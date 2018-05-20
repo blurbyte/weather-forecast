@@ -26,6 +26,7 @@ class Search extends Component {
 
   handleSearch = e => {
     const search = e.target.value;
+    // Functional state to trigger debounce after state change
     this.setState({ search }, () => {
       this.debounceFetch();
     });

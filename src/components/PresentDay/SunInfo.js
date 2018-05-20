@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import formatHour from '../../utils/formatHour';
+import { formatHour } from '../../utils';
 import Row from '../Row';
 import InfoText from './InfoText';
 import Label from './Label';

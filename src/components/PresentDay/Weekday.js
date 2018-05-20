@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
-import weekday from '../../utils/weekday';
+import { weekday } from '../../utils';
 import Text from '../Text';
 import BaseRow from '../Row';
 import Label from './Label';

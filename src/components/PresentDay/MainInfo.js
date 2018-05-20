@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
-import removeDecimals from '../../utils/removeDecimals';
+import { removeDecimals } from '../../utils';
 import BaseRow from '../Row';
 import WeatherIcon from '../WeatherIcon';
 import Temperature from './Temperature';

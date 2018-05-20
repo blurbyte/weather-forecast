@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import isDaytime from '../../utils/isDaytime';
+import { isDaytime } from '../../utils';
 import Text from '../Text';
 import Content from './Content';
 import CityName from './CityName';

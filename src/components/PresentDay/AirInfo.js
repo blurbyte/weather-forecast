@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import removeDecimals from '../../utils/removeDecimals';
+import { removeDecimals } from '../../utils';
 import Row from '../Row';
 import InfoText from './InfoText';
 import Label from './Label';
