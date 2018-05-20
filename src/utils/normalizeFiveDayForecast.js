@@ -42,6 +42,7 @@ export const lowestTemperature = day =>
 
 // Removes all not relevent data
 // Gets weather id and description beased on first entry of the given day
+// Getting weatherId and description could be improved
 export const transformDay = day => ({
   weatherId: day[0].weather[0].id,
   description: day[0].weather[0].description,
