@@ -5,6 +5,12 @@ exports[`renders correctly 1`] = `
   position: relative;
 }
 
+@media (max-width:40em) {
+  .c0 {
+    display: none;
+  }
+}
+
 <form
   className="c0"
 />

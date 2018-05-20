@@ -5,7 +5,9 @@ import 'jest-styled-components';
 import Search from '../index';
 
 jest.mock('../Input', () => 'Input');
-jest.mock('../Icon', () => 'Icon');
+jest.mock('../../Icons', () => ({
+  Magnifier: 'Magnifier'
+}));
 
 test('renders correctly', () => {
   const component = renderer.create(<Search />);
