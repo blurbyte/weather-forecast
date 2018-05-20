@@ -5,6 +5,11 @@ exports[`renders correctly 1`] = `
   height: 6rem;
   border-top: 1px solid rgba(34,34,34,0.5);
   grid-area: footer;
+  -webkit-animation: eMLfYp 0.6s ease-out forwards;
+  animation: eMLfYp 0.6s ease-out forwards;
+  opacity: 0;
+  -webkit-animation-delay: 0.6s;
+  animation-delay: 0.6s;
 }
 
 <footer

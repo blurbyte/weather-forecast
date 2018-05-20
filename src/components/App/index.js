@@ -15,22 +15,22 @@ class App extends Component {
   render() {
     return (
       <Forecast city="Madrid,ES">
-        {({ presentDay, nextDays, loading }) => (
-          <ThemeProvider
-            theme={isDaytime(presentDay.sunrise * 1000, presentDay.sunset * 1000, Date.now()) ? dayTheme : nightTheme}
-          >
-            <Layout>
-              <Header />
-              {loading ? null : (
+        {({ presentDay, nextDays, loading }) =>
+          loading ? null : (
+            <ThemeProvider
+              theme={isDaytime(presentDay.sunrise * 1000, presentDay.sunset * 1000, Date.now()) ? dayTheme : nightTheme}
+            >
+              <Layout>
+                <Header />
                 <MainContent>
                   <PresentDay {...presentDay} />
                   <NextDays days={nextDays} />
                 </MainContent>
-              )}
-              <Footer />
-            </Layout>
-          </ThemeProvider>
-        )}
+                <Footer />
+              </Layout>
+            </ThemeProvider>
+          )
+        }
       </Forecast>
     );
   }

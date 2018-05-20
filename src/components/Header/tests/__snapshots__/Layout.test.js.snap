@@ -6,6 +6,11 @@ exports[`renders correctly 1`] = `
   height: 6rem;
   border-bottom: 1px solid #222222;
   grid-area: header;
+  -webkit-animation: eMLfYp 1.6s ease-out forwards;
+  animation: eMLfYp 1.6s ease-out forwards;
+  opacity: 0;
+  -webkit-animation-delay: 0.2s;
+  animation-delay: 0.2s;
 }
 
 <header

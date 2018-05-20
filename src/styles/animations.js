@@ -10,3 +10,12 @@ export const fadeIn = keyframes`
     transform: translateY(0);
   }
 `;
+
+export const simpleFadeIn = keyframes`
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+`;
