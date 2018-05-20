@@ -1,0 +1,71 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+.c1 {
+  color: #222222;
+  width: 28rem;
+  height: 4rem;
+  border: 1px solid transparent;
+  background-color: rgba(255,255,255,0.3);
+  padding: 0 1.2rem;
+  font-size: 1.4rem;
+  outline: 0;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.c1:focus {
+  width: 36rem;
+  border: 1px solid #222222;
+  background-color: #ffffff;
+  color: #222222;
+}
+
+.c1:focus::-webkit-input-placeholder {
+  color: rgba(34,34,34,0.5);
+}
+
+.c1:focus::-moz-placeholder {
+  color: rgba(34,34,34,0.5);
+}
+
+.c1:focus:-ms-input-placeholder {
+  color: rgba(34,34,34,0.5);
+}
+
+.c1:focus::placeholder {
+  color: rgba(34,34,34,0.5);
+}
+
+.c1::-webkit-input-placeholder {
+  color: rgba(34,34,34,0.5);
+}
+
+.c1::-moz-placeholder {
+  color: rgba(34,34,34,0.5);
+}
+
+.c1:-ms-input-placeholder {
+  color: rgba(34,34,34,0.5);
+}
+
+.c1::placeholder {
+  color: rgba(34,34,34,0.5);
+}
+
+.c0 {
+  padding-right: 4.4rem;
+}
+
+.c0 + .sc-bwzfXH {
+  color: #222222;
+}
+
+.c0:focus + .sc-bwzfXH {
+  color: #222;
+}
+
+<input
+  className="c0 c1"
+/>
+`;

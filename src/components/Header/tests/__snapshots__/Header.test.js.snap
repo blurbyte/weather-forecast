@@ -8,9 +8,7 @@ exports[`renders correctly 1`] = `
     className="sc-bwzfXH jaPkJ sc-bdVaJa hNXGXU"
   >
     <Logo />
-    <Input
-      placeholder="Your city name"
-    />
+    <Search />
   </div>
 </header>
 `;

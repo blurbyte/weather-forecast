@@ -12,3 +12,4 @@ export { default as ScatteredClouds } from './ScatteredClouds';
 export { default as ShowerRain } from './ShowerRain';
 export { default as Snow } from './Snow';
 export { default as Thunderstorm } from './Thunderstorm';
+export { default as Magnifier } from './Magnifier';
