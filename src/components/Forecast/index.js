@@ -13,7 +13,7 @@ class Forecast extends Component {
   };
 
   static defaultProps = {
-    city: 2643743
+    cityId: 2643743
   };
 
   state = {
