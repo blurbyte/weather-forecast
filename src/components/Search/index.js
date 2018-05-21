@@ -2,28 +2,34 @@ import React, { Component } from 'react';
 import debounce from 'lodash.debounce';
 
 import { getCities } from '../../services/forecast';
-import { delay } from '../../utils';
 import { Magnifier } from '../Icons';
 import Input from './Input';
 import Form from './Form';
 import Icon from './Icon';
 import FoundCities from './FoundCities';
+import Status from './Status';
+
+const MIN_SEARCH_QUERY_LEN = 3;
 
 class Search extends Component {
   state = {
     search: '',
     foundCities: [],
-    loading: false
+    nothingFound: false
   };
 
   fetchCities = async search => {
     // Guards agains failed API responses
     // Since it accepts only at least 3 characters as search
-    if (search.length > 2) {
-      this.setState({ loading: true });
+    if (search.length >= MIN_SEARCH_QUERY_LEN) {
       const cities = await getCities(search);
-      await delay(300);
-      this.setState({ foundCities: cities, loading: false });
+
+      if (cities.length > 0) {
+        this.setState({ foundCities: cities });
+      } else {
+        // Displays status label when no cities matched search query
+        this.setState({ foundCities: [], nothingFound: true });
+      }
     }
   };
 
@@ -35,22 +41,37 @@ class Search extends Component {
     const search = e.target.value;
     // Functional state to trigger debounce after state change
     this.setState({ search }, () => {
+      if (this.state.search.length < MIN_SEARCH_QUERY_LEN) {
+        this.resetFoundCities();
+      }
       this.debounceFetch();
     });
   };
 
   resetFoundCities = () => {
-    this.setState({ foundCities: [] });
+    this.setState({ foundCities: [], nothingFound: false });
+  };
+
+  resetSearch = () => {
+    this.setState({ search: '' });
   };
 
   render() {
     return (
       <Form>
-        <Input type="text" placeholder="Your city name" onChange={this.handleSearch} onBlur={this.resetFoundCities} />
+        <Input
+          type="text"
+          placeholder="Your city name"
+          value={this.state.search}
+          onChange={this.handleSearch}
+          onBlur={this.resetFoundCities}
+        />
         <Icon>
           <Magnifier />
         </Icon>
         {this.state.foundCities.length > 0 && <FoundCities cities={this.state.foundCities} />}
+        {!this.state.foundCities.length &&
+          this.state.nothingFound && <Status onMouseDown={this.resetSearch}>No cities found</Status>}
       </Form>
     );
   }

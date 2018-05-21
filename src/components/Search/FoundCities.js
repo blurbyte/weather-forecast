@@ -1,12 +1,12 @@
+// Dropdown with a list of matched cities
+
 import React from 'react';
 import PropTypes from 'prop-types';
 
 import List from './List';
 import City from './City';
 
-const FoundCities = ({ cities }) => (
-  <List>{cities.map(city => <City key={city.cityId} name={city.name} country={city.country} />)}</List>
-);
+const FoundCities = ({ cities }) => <List>{cities.map(city => <City key={city.cityId} {...city} />)}</List>;
 
 FoundCities.propTypes = {
   cities: PropTypes.arrayOf(

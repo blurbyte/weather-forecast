@@ -4,6 +4,7 @@ const List = styled.li`
   display: flex;
   align-items: center;
   height: 4rem;
+  color: #222222;
 
   &:hover {
     background-color: rgba(34, 34, 34, 0.1);

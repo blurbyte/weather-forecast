@@ -10,6 +10,7 @@ const List = styled.ul`
   background-color: #ffffff;
   margin: 0;
   padding: 0;
+  cursor: pointer;
 `;
 
 export default List;
