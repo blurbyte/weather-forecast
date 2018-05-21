@@ -6,7 +6,7 @@ import PropTypes from 'prop-types';
 import List from './List';
 import City from './City';
 
-const FoundCities = ({ cities }) => <List>{cities.map(city => <City key={city.cityId} {...city} />)}</List>;
+const FoundCities = ({ cities }) => <List>{cities.map(city => <City key={`city-${city.cityId}`} {...city} />)}</List>;
 
 FoundCities.propTypes = {
   cities: PropTypes.arrayOf(
