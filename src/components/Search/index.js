@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import debounce from 'lodash.debounce';
 
 import { getCities } from '../../services/forecast';
+import { delay } from '../../utils';
 import { Magnifier } from '../Icons';
 import Input from './Input';
 import Form from './Form';
@@ -17,6 +18,7 @@ class Search extends Component {
   fetchCities = async search => {
     this.setState({ loading: true });
     const cities = await getCities(search);
+    await delay(1000);
     this.setState({ foundCities: cities, loading: false });
   };
 
