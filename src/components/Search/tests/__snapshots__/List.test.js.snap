@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+.c0 {
+  position: absolute;
+  top: 4rem;
+  right: 0;
+  width: 36rem;
+  border: 1px solid #222222;
+  border-top: none;
+  background-color: #ffffff;
+  margin: 0;
+  padding: 0;
+}
+
+<ul
+  className="c0"
+/>
+`;

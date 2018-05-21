@@ -10,6 +10,7 @@ const Layout = styled.header`
   animation: ${simpleFadeIn} 1.6s ease-out forwards;
   opacity: 0;
   animation-delay: 0.2s;
+  z-index: 9;
 `;
 
 export default Layout;

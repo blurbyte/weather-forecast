@@ -7,6 +7,7 @@ import { Magnifier } from '../Icons';
 import Input from './Input';
 import Form from './Form';
 import Icon from './Icon';
+import FoundCities from './FoundCities';
 
 class Search extends Component {
   state = {
@@ -16,10 +17,14 @@ class Search extends Component {
   };
 
   fetchCities = async search => {
-    this.setState({ loading: true });
-    const cities = await getCities(search);
-    await delay(1000);
-    this.setState({ foundCities: cities, loading: false });
+    // Guards agains failed API responses
+    // Since it accepts only at least 3 characters as search
+    if (search.length > 2) {
+      this.setState({ loading: true });
+      const cities = await getCities(search);
+      await delay(300);
+      this.setState({ foundCities: cities, loading: false });
+    }
   };
 
   debounceFetch = debounce(() => {
@@ -34,13 +39,18 @@ class Search extends Component {
     });
   };
 
+  resetFoundCities = () => {
+    this.setState({ foundCities: [] });
+  };
+
   render() {
     return (
       <Form>
-        <Input type="text" placeholder="Your city name" onChange={this.handleSearch} />
+        <Input type="text" placeholder="Your city name" onChange={this.handleSearch} onBlur={this.resetFoundCities} />
         <Icon>
           <Magnifier />
         </Icon>
+        {this.state.foundCities.length > 0 && <FoundCities cities={this.state.foundCities} />}
       </Form>
     );
   }

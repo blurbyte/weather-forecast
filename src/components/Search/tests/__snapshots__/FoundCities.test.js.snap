@@ -1,0 +1,38 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<ul
+  className="sc-bdVaJa hTWFZE"
+>
+  <li
+    className="sc-bwzfXH joXHtf"
+  >
+    <p
+      className="sc-bxivhb eVrlLj"
+    >
+      London
+       
+      <span
+        className="sc-htpNat dZttAm"
+      >
+        US
+      </span>
+    </p>
+  </li>
+  <li
+    className="sc-bwzfXH joXHtf"
+  >
+    <p
+      className="sc-bxivhb eVrlLj"
+    >
+      London
+       
+      <span
+        className="sc-htpNat dZttAm"
+      >
+        GB
+      </span>
+    </p>
+  </li>
+</ul>
+`;
