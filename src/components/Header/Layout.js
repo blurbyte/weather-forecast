@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import { simpleFadeIn } from '../../styles/animations';
 
 const Layout = styled.header`
+  position: relative;
   width: 100%;
   height: 6rem;
   border-bottom: 1px solid ${props => props.theme.primary};
