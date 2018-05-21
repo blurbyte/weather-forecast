@@ -3,6 +3,7 @@
 exports[`renders correctly 1`] = `
 .c0 {
   position: absolute;
+  z-index: 9;
   top: 0.8rem;
   right: 1rem;
   -webkit-transition: color 0.35s linear;
