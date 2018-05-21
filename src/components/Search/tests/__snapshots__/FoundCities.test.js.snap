@@ -2,10 +2,10 @@
 
 exports[`renders correctly 1`] = `
 <ul
-  className="sc-bdVaJa hTWFZE"
+  className="sc-bdVaJa bURQit"
 >
   <li
-    className="sc-bwzfXH joXHtf"
+    className="sc-bwzfXH fVFZop"
   >
     <p
       className="sc-bxivhb eVrlLj"
@@ -20,7 +20,7 @@ exports[`renders correctly 1`] = `
     </p>
   </li>
   <li
-    className="sc-bwzfXH joXHtf"
+    className="sc-bwzfXH fVFZop"
   >
     <p
       className="sc-bxivhb eVrlLj"

@@ -1,6 +1,19 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`renders correctly 1`] = `
+.c1 {
+  position: absolute;
+  top: 4rem;
+  right: 0;
+  width: 36rem;
+  border: 1px solid #222222;
+  border-top: none;
+  background-color: #ffffff;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+}
+
 .c0 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -11,14 +24,12 @@ exports[`renders correctly 1`] = `
   -ms-flex-align: center;
   align-items: center;
   height: 4rem;
-  color: #222222;
+  padding: 0 1.4rem;
+  font-style: italic;
+  color: rgba(34,34,34,0.5);
 }
 
-.c0:hover {
-  background-color: rgba(34,34,34,0.1);
-}
-
-<li
-  className="c0"
+<div
+  className="c0 c1"
 />
 `;

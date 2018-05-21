@@ -1,38 +1,98 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`renders correctly 1`] = `
-.c0 {
-  position: relative;
-}
-
-.c1 {
-  position: absolute;
-  z-index: 9;
-  top: 0.8rem;
-  right: 1rem;
-  -webkit-transition: color 0.35s linear;
-  transition: color 0.35s linear;
-}
-
-@media (max-width:40em) {
-  .c0 {
-    display: none;
-  }
-}
-
 <form
-  className="c0"
+  className="sc-bdVaJa iJQmjv"
 >
   <Input
     onBlur={[Function]}
     onChange={[Function]}
     placeholder="Your city name"
     type="text"
+    value=""
   />
   <div
-    className="c1"
+    className="sc-bwzfXH fZUXHc"
   >
     <Magnifier />
   </div>
+</form>
+`;
+
+exports[`renders correctly when no matches got found 1`] = `
+<form
+  className="sc-bdVaJa iJQmjv"
+>
+  <Input
+    onBlur={[Function]}
+    onChange={[Function]}
+    placeholder="Your city name"
+    type="text"
+    value=""
+  />
+  <div
+    className="sc-bwzfXH fZUXHc"
+  >
+    <Magnifier />
+  </div>
+  <div
+    className="sc-gzVnrw blcucl sc-bZQynM fsVViQ"
+    onMouseDown={[Function]}
+  >
+    No cities found
+  </div>
+</form>
+`;
+
+exports[`renders correctly when some cities got found 1`] = `
+<form
+  className="sc-bdVaJa iJQmjv"
+>
+  <Input
+    onBlur={[Function]}
+    onChange={[Function]}
+    placeholder="Your city name"
+    type="text"
+    value=""
+  />
+  <div
+    className="sc-bwzfXH fZUXHc"
+  >
+    <Magnifier />
+  </div>
+  <ul
+    className="sc-htpNat cknxrf"
+  >
+    <li
+      className="sc-bxivhb hjTnQZ"
+    >
+      <p
+        className="sc-EHOje cJuKxb"
+      >
+        London
+         
+        <span
+          className="sc-ifAKCX dzJAFD"
+        >
+          US
+        </span>
+      </p>
+    </li>
+    <li
+      className="sc-bxivhb hjTnQZ"
+    >
+      <p
+        className="sc-EHOje cJuKxb"
+      >
+        London
+         
+        <span
+          className="sc-ifAKCX dzJAFD"
+        >
+          GB
+        </span>
+      </p>
+    </li>
+  </ul>
 </form>
 `;
