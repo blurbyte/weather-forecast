@@ -36,7 +36,7 @@ exports[`renders correctly when no matches got found 1`] = `
     <Magnifier />
   </div>
   <div
-    className="sc-gzVnrw blcucl sc-bZQynM fsVViQ"
+    className="sc-gzVnrw blcucl sc-bZQynM grDNzn"
     onMouseDown={[Function]}
   >
     No cities found
@@ -61,7 +61,7 @@ exports[`renders correctly when some cities got found 1`] = `
     <Magnifier />
   </div>
   <ul
-    className="sc-htpNat cknxrf"
+    className="sc-htpNat fnJGJO"
   >
     <li
       className="sc-bxivhb hjTnQZ"

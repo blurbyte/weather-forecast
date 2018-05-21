@@ -14,6 +14,10 @@ exports[`renders correctly 1`] = `
   transition: all 0.3s;
 }
 
+.c1::-ms-clear {
+  display: none;
+}
+
 .c1:focus {
   width: 36rem;
   border: 1px solid #222222;
