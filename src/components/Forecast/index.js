@@ -27,6 +27,7 @@ class Forecast extends Component {
   fetchForecast = async cityId => {
     this.setState({ loading: true });
 
+    // Waits for both reauest for better UX
     const [presentDay, nextDays] = await Promise.all([getCurrentWeather(cityId), getFiveDayForecast(cityId)]);
 
     // sets new cityId passed from search in state and localStorage
@@ -34,18 +35,22 @@ class Forecast extends Component {
     this.setState({ cityId, presentDay, nextDays, loading: false });
   };
 
-  pollForecast() {
+  pollForecast = () => {
     // Updates forecast every hour
-    setInterval(() => {
+    this.updateForecast = setInterval(() => {
       this.fetchForecast(this.state.cityId);
     }, 1000 * 60 * 60);
-  }
+  };
 
   componentDidMount() {
     // retrieve cityId value from localStorage if it exists
     const cityId = localStorage.getItem('cityId') ? localStorage.getItem('cityId') : this.state.cityId;
     this.fetchForecast(cityId);
     this.pollForecast();
+  }
+
+  componentWillUnmount() {
+    clearInterval(this.updateForecast);
   }
 
   render() {
