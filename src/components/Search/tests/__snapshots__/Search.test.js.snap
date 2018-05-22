@@ -3,6 +3,7 @@
 exports[`renders correctly 1`] = `
 <form
   className="sc-bdVaJa iJQmjv"
+  onSubmit={[Function]}
 >
   <Input
     onBlur={[Function]}
@@ -22,6 +23,7 @@ exports[`renders correctly 1`] = `
 exports[`renders correctly when no matches got found 1`] = `
 <form
   className="sc-bdVaJa iJQmjv"
+  onSubmit={[Function]}
 >
   <Input
     onBlur={[Function]}
@@ -47,6 +49,7 @@ exports[`renders correctly when no matches got found 1`] = `
 exports[`renders correctly when some cities got found 1`] = `
 <form
   className="sc-bdVaJa iJQmjv"
+  onSubmit={[Function]}
 >
   <Input
     onBlur={[Function]}

@@ -53,6 +53,19 @@ class Search extends Component {
     });
   };
 
+  handleSubmit = e => {
+    e.preventDefault();
+
+    const { foundCities } = this.state;
+
+    // Grabs first city from a list
+    // Otherwise resets form
+    if (foundCities.length > 0) {
+      this.props.fetchForecast(foundCities[0].cityId);
+    }
+    this.setState({ search: '', nothingFound: false });
+  };
+
   resetFoundCities = () => {
     this.setState({ foundCities: [], nothingFound: false });
   };
@@ -63,7 +76,7 @@ class Search extends Component {
 
   render() {
     return (
-      <Form>
+      <Form onSubmit={this.handleSubmit}>
         <Input
           type="text"
           placeholder="Your city name"
