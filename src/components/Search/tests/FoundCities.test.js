@@ -17,6 +17,6 @@ test('renders correctly', () => {
     }
   ];
 
-  const component = renderer.create(<FoundCities cities={cities} />);
+  const component = renderer.create(<FoundCities cities={cities} fetchForecast={jest.fn()} />);
   expect(component.toJSON()).toMatchSnapshot();
 });

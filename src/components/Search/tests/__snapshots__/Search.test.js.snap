@@ -65,6 +65,7 @@ exports[`renders correctly when some cities got found 1`] = `
   >
     <li
       className="sc-bxivhb hjTnQZ"
+      onMouseDown={[Function]}
     >
       <p
         className="sc-EHOje cJuKxb"
@@ -80,6 +81,7 @@ exports[`renders correctly when some cities got found 1`] = `
     </li>
     <li
       className="sc-bxivhb hjTnQZ"
+      onMouseDown={[Function]}
     >
       <p
         className="sc-EHOje cJuKxb"

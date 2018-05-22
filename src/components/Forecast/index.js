@@ -8,12 +8,12 @@ import { getCurrentWeather, getFiveDayForecast } from '../../services/forecast';
 
 class Forecast extends Component {
   static propTypes = {
-    cityId: PropTypes.number,
+    initialCityId: PropTypes.number,
     children: PropTypes.func.isRequired
   };
 
   static defaultProps = {
-    cityId: 2643743
+    initialCityId: 2643743
   };
 
   state = {
@@ -31,11 +31,16 @@ class Forecast extends Component {
   };
 
   componentDidMount() {
-    this.fetchForecast(this.props.cityId);
+    this.fetchForecast(this.props.initialCityId);
   }
 
   render() {
-    return this.props.children(this.state);
+    return this.props.children({
+      presentDay: this.state.presentDay,
+      nextDays: this.state.nextDays,
+      loading: this.state.loading,
+      fetchForecast: this.fetchForecast
+    });
   }
 }
 

@@ -10,8 +10,8 @@ const Caption = styled.p`
   margin: 0;
 `;
 
-const City = ({ name, country }) => (
-  <ListItem>
+const City = ({ cityId, name, country, fetchForecast }) => (
+  <ListItem onMouseDown={() => fetchForecast(cityId)}>
     <Caption>
       {name} <CountryCode>{country}</CountryCode>
     </Caption>
@@ -19,8 +19,10 @@ const City = ({ name, country }) => (
 );
 
 City.propTypes = {
+  cityId: PropTypes.number.isRequired,
   name: PropTypes.string.isRequired,
-  country: PropTypes.string.isRequired
+  country: PropTypes.string.isRequired,
+  fetchForecast: PropTypes.func.isRequired
 };
 
 export default City;

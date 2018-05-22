@@ -6,6 +6,7 @@ exports[`renders correctly 1`] = `
 >
   <li
     className="sc-bwzfXH fVFZop"
+    onMouseDown={[Function]}
   >
     <p
       className="sc-bxivhb eVrlLj"
@@ -21,6 +22,7 @@ exports[`renders correctly 1`] = `
   </li>
   <li
     className="sc-bwzfXH fVFZop"
+    onMouseDown={[Function]}
   >
     <p
       className="sc-bxivhb eVrlLj"

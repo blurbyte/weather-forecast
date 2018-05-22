@@ -1,6 +1,6 @@
 import normalizeCities from '../normalizeCities';
 
-test('normalizeCities() simplifies API response structure', () => {
+test('normalizeCities() simplifies API response structure and remove duplicated records', () => {
   const initialData = {
     message: 'like',
     count: 2,
@@ -22,6 +22,25 @@ test('normalizeCities() simplifies API response structure', () => {
         },
         sys: {
           country: 'GB'
+        }
+      },
+      {
+        id: 6058560,
+        name: 'London',
+        coord: {
+          lat: 42.9886,
+          lon: -81.2467
+        },
+        main: {
+          temp: 28.4
+        },
+        dt: 1526839200,
+        wind: {
+          speed: 4.2,
+          deg: 330
+        },
+        sys: {
+          country: 'CA'
         }
       },
       {

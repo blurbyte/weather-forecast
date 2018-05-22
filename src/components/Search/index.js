@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import debounce from 'lodash.debounce';
 
 import { getCities } from '../../services/forecast';
@@ -12,6 +13,10 @@ import Status from './Status';
 const MIN_SEARCH_QUERY_LEN = 3;
 
 class Search extends Component {
+  static propTypes = {
+    fetchForecast: PropTypes.func.isRequired
+  };
+
   state = {
     search: '',
     foundCities: [],
@@ -69,7 +74,9 @@ class Search extends Component {
         <Icon>
           <Magnifier />
         </Icon>
-        {this.state.foundCities.length > 0 && <FoundCities cities={this.state.foundCities} />}
+        {this.state.foundCities.length > 0 && (
+          <FoundCities cities={this.state.foundCities} fetchForecast={this.props.fetchForecast} />
+        )}
         {!this.state.foundCities.length &&
           this.state.nothingFound && <Status onMouseDown={this.resetSearch}>No cities found</Status>}
       </Form>

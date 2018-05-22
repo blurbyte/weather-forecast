@@ -9,12 +9,12 @@ jest.mock('../../Icons', () => ({
 }));
 
 test('renders correctly', () => {
-  const component = renderer.create(<Search />);
+  const component = renderer.create(<Search fetchForecast={jest.fn()} />);
   expect(component.toJSON()).toMatchSnapshot();
 });
 
 test('renders correctly when some cities got found', () => {
-  const component = renderer.create(<Search />);
+  const component = renderer.create(<Search fetchForecast={jest.fn()} />);
 
   const instance = component.getInstance();
   instance.setState({
@@ -36,7 +36,7 @@ test('renders correctly when some cities got found', () => {
 });
 
 test('renders correctly when no matches got found', () => {
-  const component = renderer.create(<Search />);
+  const component = renderer.create(<Search fetchForecast={jest.fn()} />);
 
   const instance = component.getInstance();
   instance.setState({ foundCities: [], nothingFound: true });

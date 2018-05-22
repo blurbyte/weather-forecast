@@ -14,14 +14,14 @@ import Layout from './Layout';
 class App extends Component {
   render() {
     return (
-      <Forecast cityId={2643743}>
-        {({ presentDay, nextDays, loading }) =>
+      <Forecast initialCityId={2643743}>
+        {({ presentDay, nextDays, loading, fetchForecast }) =>
           loading ? null : (
             <ThemeProvider
               theme={isDaytime(presentDay.sunrise * 1000, presentDay.sunset * 1000, Date.now()) ? dayTheme : nightTheme}
             >
               <Layout>
-                <Header />
+                <Header fetchForecast={fetchForecast} />
                 <MainContent>
                   <PresentDay {...presentDay} />
                   <NextDays days={nextDays} />

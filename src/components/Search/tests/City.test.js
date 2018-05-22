@@ -7,7 +7,8 @@ test('renders correctly', () => {
   const props = {
     cityId: 234567,
     name: 'London',
-    country: 'US'
+    country: 'US',
+    fetchForecast: jest.fn()
   };
 
   const component = renderer.create(<City {...props} />);
