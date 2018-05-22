@@ -1,9 +1,9 @@
 import styled from 'styled-components';
 
-const List = styled.li`
+const ListItem = styled.li`
   display: flex;
   align-items: center;
-  height: 4rem;
+  height: 3.8rem;
   color: #222222;
 
   &:hover {
@@ -11,4 +11,4 @@ const List = styled.li`
   }
 `;
 
-export default List;
+export default ListItem;

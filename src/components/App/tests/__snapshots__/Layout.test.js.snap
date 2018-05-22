@@ -7,8 +7,8 @@ exports[`renders correctly 1`] = `
   grid-template-columns: 1fr;
   grid-template-rows: auto 1fr auto;
   grid-template-areas: 'header' 'main' 'footer';
-  -webkit-transition: background-color 0.45s linear;
-  transition: background-color 0.45s linear;
+  -webkit-animation: eMLfYp 0.35s ease-out forwards;
+  animation: eMLfYp 0.35s ease-out forwards;
 }
 
 <div

@@ -1,5 +1,7 @@
 import styled from 'styled-components';
 
+import { simpleFadeIn } from '../../styles/animations';
+
 const Layout = styled.div`
   background-color: ${props => props.theme.background};
   min-height: 100vh;
@@ -10,7 +12,7 @@ const Layout = styled.div`
     'header'
     'main'
     'footer';
-  transition: background-color 0.45s linear;
+  animation: ${simpleFadeIn} 0.35s ease-out forwards;
 `;
 
 export default Layout;
