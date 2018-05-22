@@ -1,5 +1,6 @@
 // Fetch data from API and passes it to children
 // Iplemented with render prop pattern
+// cityId in state is mainly for long polling and as localStorage fallback
 
 import { Component } from 'react';
 import PropTypes from 'prop-types';
@@ -17,6 +18,7 @@ class Forecast extends Component {
   };
 
   state = {
+    cityId: this.props.initialCityId,
     presentDay: {},
     nextDays: {},
     loading: true
@@ -27,11 +29,23 @@ class Forecast extends Component {
 
     const [presentDay, nextDays] = await Promise.all([getCurrentWeather(cityId), getFiveDayForecast(cityId)]);
 
-    this.setState({ presentDay, nextDays, loading: false });
+    // sets new cityId passed from search in state and localStorage
+    localStorage.setItem('cityId', cityId);
+    this.setState({ cityId, presentDay, nextDays, loading: false });
   };
 
+  pollForecast() {
+    // Updates forecast every hour
+    setInterval(() => {
+      this.fetchForecast(this.state.cityId);
+    }, 1000 * 60 * 60);
+  }
+
   componentDidMount() {
-    this.fetchForecast(this.props.initialCityId);
+    // retrieve cityId value from localStorage if it exists
+    const cityId = localStorage.getItem('cityId') ? localStorage.getItem('cityId') : this.state.cityId;
+    this.fetchForecast(cityId);
+    this.pollForecast();
   }
 
   render() {
