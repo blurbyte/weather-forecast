@@ -17,6 +17,7 @@ class App extends Component {
       <Forecast initialCityId={2643743}>
         {({ presentDay, nextDays, loading, fetchForecast }) =>
           loading ? null : (
+            // Calculates current theme depending on daytime
             <ThemeProvider
               theme={isDaytime(presentDay.sunrise * 1000, presentDay.sunset * 1000, Date.now()) ? dayTheme : nightTheme}
             >
