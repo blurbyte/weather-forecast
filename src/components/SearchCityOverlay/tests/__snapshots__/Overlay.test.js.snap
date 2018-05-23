@@ -1,0 +1,32 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+.c1 {
+  position: fixed;
+  z-index: 9999;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0,0,0,0.75);
+  -webkit-animation: eMLfYp 0.15s ease-out forwards;
+  animation: eMLfYp 0.15s ease-out forwards;
+  opacity: 0;
+}
+
+.c0 {
+  display: none;
+}
+
+@media (max-width:40em) {
+  .c0 {
+    display: block;
+  }
+}
+
+<div
+  className="c0 c1"
+>
+  Portal Test
+</div>
+`;

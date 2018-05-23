@@ -6,6 +6,7 @@ const List = styled.ul`
   padding: 0;
   margin: 0;
   border-bottom: 1px solid #222222;
+  cursor: pointer;
 `;
 
 export default List;

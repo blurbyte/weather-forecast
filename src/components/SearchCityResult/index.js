@@ -1,4 +1,4 @@
-// Compound component rendering results of search
+// Component rendering results of search
 // Custom list and list item components should be provided
 
 import React, { Component } from 'react';
