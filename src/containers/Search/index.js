@@ -68,7 +68,7 @@ class Search extends Component {
   };
 
   resetSearch = () => {
-    this.setState({ search: '' });
+    this.setState({ search: '', nothingFound: false });
   };
 
   render() {

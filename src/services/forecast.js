@@ -20,7 +20,7 @@ export function getFiveDayForecast(cityId) {
 export function getCities(search) {
   const encodedSearch = encodeURIComponent(search);
   return fetch(
-    `http://api.openweathermap.org/data/2.5/find?q=${encodedSearch}&mode=json&type=like&sort=population&APPID=${API_KEY}`
+    `http://api.openweathermap.org/data/2.5/find?q=${encodedSearch}&mode=json&cnt=8&type=like&sort=population&APPID=${API_KEY}`
   )
     .then(res => res.json())
     .then(data => normalizeCities(data.list));
