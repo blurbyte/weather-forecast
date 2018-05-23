@@ -1,11 +1,13 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
 import { ThemeProvider } from 'styled-components';
+import MockDate from 'mockdate';
 
 import { dayTheme } from '../../../styles/themes';
 import PresentDay from '../index';
 
 jest.mock('../../WeatherIcon', () => 'WeatherIcon');
+MockDate.set('5/5/2018', 0);
 
 test('renders correctly', () => {
   const props = {
@@ -27,3 +29,5 @@ test('renders correctly', () => {
   );
   expect(component.toJSON()).toMatchSnapshot();
 });
+
+MockDate.reset();
