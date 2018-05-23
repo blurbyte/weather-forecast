@@ -8,8 +8,8 @@ exports[`renders correctly 1`] = `
     className="sc-bwzfXH jaPkJ sc-bdVaJa hNXGXU"
   >
     <Logo />
-    <Search
-      fetchForecast={undefined}
+    <SearchCity
+      fetchForecast={[Function]}
     />
   </div>
 </header>

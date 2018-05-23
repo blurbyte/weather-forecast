@@ -3,11 +3,6 @@ import renderer from 'react-test-renderer';
 
 import Search from '../index';
 
-jest.mock('../../SearchInput', () => 'SearchInput');
-jest.mock('../../Icons', () => ({
-  Magnifier: 'Magnifier'
-}));
-
 const mockedEvent = {
   preventDefault: jest.fn()
 };
@@ -25,32 +20,10 @@ const foundCities = [
   }
 ];
 
-test('renders correctly', () => {
-  const component = renderer.create(<Search fetchForecast={jest.fn()} />);
-  expect(component.toJSON()).toMatchSnapshot();
-});
-
-test('renders correctly when some cities got found', () => {
-  const component = renderer.create(<Search fetchForecast={jest.fn()} />);
-
-  const instance = component.getInstance();
-  instance.setState({ foundCities });
-
-  expect(component.toJSON()).toMatchSnapshot();
-});
-
-test('renders correctly when no matches got found', () => {
-  const component = renderer.create(<Search fetchForecast={jest.fn()} />);
-
-  const instance = component.getInstance();
-  instance.setState({ foundCities: [], nothingFound: true });
-
-  expect(component.toJSON()).toMatchSnapshot();
-});
-
 test('handleSubmit() handles submitting form correctly when some cities got found', () => {
+  const renderFunc = jest.fn().mockReturnValue(null);
   const fetchForecast = jest.fn();
-  const component = renderer.create(<Search fetchForecast={fetchForecast} />);
+  const component = renderer.create(<Search fetchForecast={fetchForecast}>{renderFunc}</Search>);
 
   const instance = component.getInstance();
   instance.setState({ foundCities });
@@ -60,8 +33,9 @@ test('handleSubmit() handles submitting form correctly when some cities got foun
 });
 
 test('handleSubmit() resets form if no cities were found', () => {
+  const renderFunc = jest.fn().mockReturnValue(null);
   const fetchForecast = jest.fn();
-  const component = renderer.create(<Search fetchForecast={fetchForecast} />);
+  const component = renderer.create(<Search fetchForecast={fetchForecast}>{renderFunc}</Search>);
 
   const expectedState = {
     search: '',

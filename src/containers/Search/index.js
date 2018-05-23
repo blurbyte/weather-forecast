@@ -1,18 +1,17 @@
-import React, { Component } from 'react';
+// Fetch list of cities based on provided query
+
+import { Component } from 'react';
 import PropTypes from 'prop-types';
 import debounce from 'lodash.debounce';
 
 import { getCities } from '../../services/forecast';
-import SearchInput from '../SearchInput';
-import Form from './Form';
-import FoundCities from './FoundCities';
-import Status from './Status';
 
 const MIN_SEARCH_QUERY_LEN = 3;
 
 class Search extends Component {
   static propTypes = {
-    fetchForecast: PropTypes.func.isRequired
+    fetchForecast: PropTypes.func.isRequired,
+    children: PropTypes.func.isRequired
   };
 
   state = {
@@ -73,21 +72,14 @@ class Search extends Component {
   };
 
   render() {
-    return (
-      <Form onSubmit={this.handleSubmit}>
-        <SearchInput
-          placeholder="Your city name"
-          value={this.state.search}
-          onChange={this.handleSearch}
-          onBlur={this.resetFoundCities}
-        />
-        {this.state.foundCities.length > 0 && (
-          <FoundCities cities={this.state.foundCities} fetchForecast={this.props.fetchForecast} />
-        )}
-        {!this.state.foundCities.length &&
-          this.state.nothingFound && <Status onMouseDown={this.resetSearch}>No cities found</Status>}
-      </Form>
-    );
+    return this.props.children({
+      ...this.state,
+      handleSearch: this.handleSearch,
+      handleSubmit: this.handleSubmit,
+      fetchForecast: this.props.fetchForecast,
+      resetFoundCities: this.resetFoundCities,
+      resetSearch: this.resetSearch
+    });
   }
 }
 

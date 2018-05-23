@@ -3,7 +3,7 @@ import { ThemeProvider } from 'styled-components';
 
 import { dayTheme, nightTheme } from '../../styles/themes';
 import { isDaytime } from '../../utils';
-import Forecast from '../Forecast';
+import Forecast from '../../containers/Forecast';
 import MainContent from '../MainContent';
 import Header from '../Header';
 import PresentDay from '../PresentDay';

@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<form
+  className="sc-bdVaJa iJQmjv"
+  onSubmit={[Function]}
+>
+  <SearchInput
+    onBlur={[Function]}
+    onChange={[Function]}
+    placeholder="Your city name"
+    value=""
+  />
+</form>
+`;
