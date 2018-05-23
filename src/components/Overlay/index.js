@@ -16,7 +16,8 @@ class Overlay extends Component {
   }
 
   render() {
-    return createPortal(<Wrapper>{this.props.children}</Wrapper>, this.overlayContainer);
+    const { children, ...rest } = this.props;
+    return createPortal(<Wrapper {...rest}>{children}</Wrapper>, this.overlayContainer);
   }
 }
 

@@ -3,9 +3,11 @@ import PropTypes from 'prop-types';
 
 import Search from '../../containers/Search';
 import SearchInput from '../SearchInput';
+import SearchCityResult from '../SearchCityResult';
 import Form from './Form';
-import FoundCities from './FoundCities';
 import Status from './Status';
+import List from './List';
+import ListItem from './ListItem';
 
 class SearchCity extends Component {
   static propTypes = {
@@ -32,7 +34,9 @@ class SearchCity extends Component {
               onChange={handleSearch}
               onBlur={resetFoundCities}
             />
-            {foundCities.length > 0 && <FoundCities cities={foundCities} fetchForecast={fetchForecast} />}
+            {foundCities.length > 0 && (
+              <SearchCityResult list={List} listItem={ListItem} cities={foundCities} fetchForecast={fetchForecast} />
+            )}
             {!foundCities.length && nothingFound && <Status onMouseDown={resetSearch}>No cities found</Status>}
           </Form>
         )}
