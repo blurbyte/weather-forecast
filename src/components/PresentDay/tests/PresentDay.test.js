@@ -2,12 +2,13 @@ import React from 'react';
 import renderer from 'react-test-renderer';
 import { ThemeProvider } from 'styled-components';
 import MockDate from 'mockdate';
+import moment from 'moment-timezone';
 
 import { dayTheme } from '../../../styles/themes';
 import PresentDay from '../index';
 
 jest.mock('../../WeatherIcon', () => 'WeatherIcon');
-MockDate.set('5/5/2018', 0);
+MockDate.set(moment('2018-05-19T18:00:00'));
 
 test('renders correctly', () => {
   const props = {
