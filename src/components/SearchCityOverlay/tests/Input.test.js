@@ -2,9 +2,9 @@ import React from 'react';
 import renderer from 'react-test-renderer';
 import 'jest-styled-components';
 
-import Logo from '../Logo';
+import Input from '../Input';
 
 test('renders correctly', () => {
-  const component = renderer.create(<Logo />);
+  const component = renderer.create(<Input />);
   expect(component.toJSON()).toMatchSnapshot();
 });

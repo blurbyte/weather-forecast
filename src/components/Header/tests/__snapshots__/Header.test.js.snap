@@ -8,6 +8,9 @@ exports[`renders correctly 1`] = `
     className="sc-bwzfXH jaPkJ sc-bdVaJa hNXGXU"
   >
     <Logo />
+    <SearchCityOverlay
+      fetchForecast={[Function]}
+    />
     <SearchCity
       fetchForecast={[Function]}
     />
