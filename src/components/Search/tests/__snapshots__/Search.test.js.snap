@@ -5,18 +5,12 @@ exports[`renders correctly 1`] = `
   className="sc-bdVaJa iJQmjv"
   onSubmit={[Function]}
 >
-  <Input
+  <SearchInput
     onBlur={[Function]}
     onChange={[Function]}
     placeholder="Your city name"
-    type="text"
     value=""
   />
-  <div
-    className="sc-bwzfXH fZUXHc"
-  >
-    <Magnifier />
-  </div>
 </form>
 `;
 
@@ -25,20 +19,14 @@ exports[`renders correctly when no matches got found 1`] = `
   className="sc-bdVaJa iJQmjv"
   onSubmit={[Function]}
 >
-  <Input
+  <SearchInput
     onBlur={[Function]}
     onChange={[Function]}
     placeholder="Your city name"
-    type="text"
     value=""
   />
   <div
-    className="sc-bwzfXH fZUXHc"
-  >
-    <Magnifier />
-  </div>
-  <div
-    className="sc-gzVnrw blcucl sc-bZQynM grDNzn"
+    className="sc-bZQynM cgWLaR sc-EHOje kbodPI"
     onMouseDown={[Function]}
   >
     No cities found
@@ -51,48 +39,42 @@ exports[`renders correctly when some cities got found 1`] = `
   className="sc-bdVaJa iJQmjv"
   onSubmit={[Function]}
 >
-  <Input
+  <SearchInput
     onBlur={[Function]}
     onChange={[Function]}
     placeholder="Your city name"
-    type="text"
     value=""
   />
-  <div
-    className="sc-bwzfXH fZUXHc"
-  >
-    <Magnifier />
-  </div>
   <ul
-    className="sc-htpNat fnJGJO"
+    className="sc-bwzfXH ctBVmg"
   >
     <li
-      className="sc-bxivhb jFUnwY"
+      className="sc-htpNat hQCJrQ"
       onMouseDown={[Function]}
     >
       <p
-        className="sc-EHOje cJuKxb"
+        className="sc-ifAKCX bnWgmO"
       >
         London
          
         <span
-          className="sc-ifAKCX dzJAFD"
+          className="sc-bxivhb bQvplE"
         >
           US
         </span>
       </p>
     </li>
     <li
-      className="sc-bxivhb jFUnwY"
+      className="sc-htpNat hQCJrQ"
       onMouseDown={[Function]}
     >
       <p
-        className="sc-EHOje cJuKxb"
+        className="sc-ifAKCX bnWgmO"
       >
         London
          
         <span
-          className="sc-ifAKCX dzJAFD"
+          className="sc-bxivhb bQvplE"
         >
           GB
         </span>

@@ -7,6 +7,8 @@ import PropTypes from 'prop-types';
 
 import { getCurrentWeather, getFiveDayForecast } from '../../services/forecast';
 
+const LOCAL_STORAGE_KEY = 'weather-forecast-city-id';
+
 class Forecast extends Component {
   static propTypes = {
     initialCityId: PropTypes.number,
@@ -31,7 +33,7 @@ class Forecast extends Component {
     const [presentDay, nextDays] = await Promise.all([getCurrentWeather(cityId), getFiveDayForecast(cityId)]);
 
     // sets new cityId passed from search in state and localStorage
-    localStorage.setItem('cityId', cityId);
+    localStorage.setItem(LOCAL_STORAGE_KEY, cityId);
     this.setState({ cityId, presentDay, nextDays, loading: false });
   };
 
@@ -44,7 +46,9 @@ class Forecast extends Component {
 
   componentDidMount() {
     // retrieve cityId value from localStorage if it exists
-    const cityId = localStorage.getItem('cityId') ? localStorage.getItem('cityId') : this.state.cityId;
+    const cityId = localStorage.getItem(LOCAL_STORAGE_KEY)
+      ? localStorage.getItem(LOCAL_STORAGE_KEY)
+      : this.state.cityId;
     this.fetchForecast(cityId);
     this.pollForecast();
   }

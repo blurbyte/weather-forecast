@@ -3,7 +3,7 @@ import renderer from 'react-test-renderer';
 
 import Search from '../index';
 
-jest.mock('../Input', () => 'Input');
+jest.mock('../../SearchInput', () => 'SearchInput');
 jest.mock('../../Icons', () => ({
   Magnifier: 'Magnifier'
 }));

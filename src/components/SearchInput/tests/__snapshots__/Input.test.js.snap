@@ -20,7 +20,6 @@ exports[`renders correctly 1`] = `
 }
 
 .c1:focus {
-  width: 36rem;
   border: 1px solid #222222;
   background-color: #ffffff;
   color: #222222;
@@ -60,6 +59,10 @@ exports[`renders correctly 1`] = `
 
 .c0 {
   padding-right: 4.4rem;
+}
+
+.c0:focus {
+  width: 36rem;
 }
 
 .c0 + .sc-bwzfXH {

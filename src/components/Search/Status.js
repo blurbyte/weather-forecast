@@ -1,3 +1,5 @@
+// Small dropdown below input
+
 import styled from 'styled-components';
 import List from './List';
 

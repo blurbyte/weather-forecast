@@ -18,7 +18,6 @@ const Input = styled.input`
   }
 
   &:focus {
-    width: 36rem;
     border: 1px solid #222222;
     background-color: #ffffff;
     color: #222222;

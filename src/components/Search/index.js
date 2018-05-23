@@ -3,10 +3,8 @@ import PropTypes from 'prop-types';
 import debounce from 'lodash.debounce';
 
 import { getCities } from '../../services/forecast';
-import { Magnifier } from '../Icons';
-import Input from './Input';
+import SearchInput from '../SearchInput';
 import Form from './Form';
-import Icon from './Icon';
 import FoundCities from './FoundCities';
 import Status from './Status';
 
@@ -40,7 +38,7 @@ class Search extends Component {
 
   debounceFetch = debounce(() => {
     this.fetchCities(this.state.search);
-  }, 400);
+  }, 300);
 
   handleSearch = e => {
     const search = e.target.value;
@@ -77,16 +75,12 @@ class Search extends Component {
   render() {
     return (
       <Form onSubmit={this.handleSubmit}>
-        <Input
-          type="text"
+        <SearchInput
           placeholder="Your city name"
           value={this.state.search}
           onChange={this.handleSearch}
           onBlur={this.resetFoundCities}
         />
-        <Icon>
-          <Magnifier />
-        </Icon>
         {this.state.foundCities.length > 0 && (
           <FoundCities cities={this.state.foundCities} fetchForecast={this.props.fetchForecast} />
         )}

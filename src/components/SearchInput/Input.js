@@ -4,6 +4,10 @@ import BaseInput from '../Input';
 import Icon from './Icon';
 
 const Input = styled(BaseInput)`
+  &:focus {
+    width: 36rem;
+  }
+
   padding-right: 4.4rem;
 
   & + ${Icon} {
