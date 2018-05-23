@@ -9,17 +9,17 @@ import Label from './Label';
 const SunInfo = ({ sunrise, sunset }) => (
   <Row>
     <InfoText>
-      <Label>Sunrise</Label> {formatHour(sunrise * 1000)}
+      <Label>Sunrise</Label> {formatHour(sunrise)}
     </InfoText>
     <InfoText>
-      <Label>Sunset</Label> {formatHour(sunset * 1000)}
+      <Label>Sunset</Label> {formatHour(sunset)}
     </InfoText>
   </Row>
 );
 
 SunInfo.propTypes = {
-  sunrise: PropTypes.number.isRequired,
-  sunset: PropTypes.number.isRequired
+  sunrise: PropTypes.oneOfType([PropTypes.string, PropTypes.number]).isRequired,
+  sunset: PropTypes.oneOfType([PropTypes.string, PropTypes.number]).isRequired
 };
 
 export default SunInfo;

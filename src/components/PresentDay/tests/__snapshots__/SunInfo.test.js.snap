@@ -11,7 +11,7 @@ exports[`renders correctly 1`] = `
       Sunrise
     </Label>
      
-    09:16
+    06:02
   </p>
   <p
     className="sc-htpNat jsqgjC sc-bwzfXH hAPHIK"
@@ -20,7 +20,7 @@ exports[`renders correctly 1`] = `
       Sunset
     </Label>
      
-    23:16
+    20:54
   </p>
 </div>
 `;
