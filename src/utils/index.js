@@ -6,4 +6,3 @@ export { default as normalizeFiveDayForecast } from './normalizeFiveDayForecast'
 export { default as removeDecimals } from './removeDecimals';
 export { default as shortDate } from './removeDecimals';
 export { default as weekday } from './weekday';
-export { default as delay } from './delay';
