@@ -10,6 +10,7 @@ const Wrapper = styled.header`
   align-items: center;
   justify-content: space-between;
   background-color: #222222;
+  border-bottom: 1px solid #222222;
   color: #ffffff;
   height: 6rem;
   padding: 0 2rem;
