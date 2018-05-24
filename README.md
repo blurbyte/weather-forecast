@@ -41,6 +41,8 @@ Ranked from least time consuming:
 * support for geolocation
 * heavy rain theme
 * better error handling with error boundaries and messages
+* loading / placeholder indicator
+* improved dates formatting for vairious timezones
 * more tests (mainly for containers)
 * display detailed present day forecast on nice d3 graph
 * use TypeScript
