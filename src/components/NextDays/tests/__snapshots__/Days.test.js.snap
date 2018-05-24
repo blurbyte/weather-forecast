@@ -23,12 +23,12 @@ exports[`renders correctly 1`] = `
         className="sc-ifAKCX hNdbxq"
       >
         <p
-          className="sc-EHOje dbfoHw sc-bwzfXH iezheg"
+          className="sc-EHOje hAggNh sc-bwzfXH iezheg"
         >
           19
         </p>
         <p
-          className="sc-EHOje dbfoHw sc-bwzfXH jWQGhq"
+          className="sc-EHOje hAggNh sc-bwzfXH jWQGhq"
         >
           10
         </p>
@@ -59,12 +59,12 @@ exports[`renders correctly 1`] = `
         className="sc-ifAKCX hNdbxq"
       >
         <p
-          className="sc-EHOje dbfoHw sc-bwzfXH iezheg"
+          className="sc-EHOje hAggNh sc-bwzfXH iezheg"
         >
           14
         </p>
         <p
-          className="sc-EHOje dbfoHw sc-bwzfXH jWQGhq"
+          className="sc-EHOje hAggNh sc-bwzfXH jWQGhq"
         >
           11
         </p>
@@ -95,12 +95,12 @@ exports[`renders correctly 1`] = `
         className="sc-ifAKCX hNdbxq"
       >
         <p
-          className="sc-EHOje dbfoHw sc-bwzfXH iezheg"
+          className="sc-EHOje hAggNh sc-bwzfXH iezheg"
         >
           11
         </p>
         <p
-          className="sc-EHOje dbfoHw sc-bwzfXH jWQGhq"
+          className="sc-EHOje hAggNh sc-bwzfXH jWQGhq"
         >
           9
         </p>

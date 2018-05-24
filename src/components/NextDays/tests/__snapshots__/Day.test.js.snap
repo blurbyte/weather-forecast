@@ -21,13 +21,13 @@ exports[`renders correctly 1`] = `
     >
       <Text
         big={true}
-        className="sc-bxivhb FCqdZ"
+        className="sc-bxivhb hjztCT"
       >
         19
       </Text>
       <Text
         big={true}
-        className="sc-bxivhb FCqdZ"
+        className="sc-bxivhb hjztCT"
       >
         10
       </Text>
