@@ -8,9 +8,9 @@ import { dayTheme } from '../../../styles/themes';
 import PresentDay from '../index';
 
 jest.mock('../../WeatherIcon', () => 'WeatherIcon');
-MockDate.set(moment('2018-05-19T18:00:00'));
 
 test('renders correctly', () => {
+  MockDate.set(moment('2018-05-19T18:00:00'));
   const props = {
     name: 'London',
     description: 'clear sky',
@@ -29,6 +29,5 @@ test('renders correctly', () => {
     </ThemeProvider>
   );
   expect(component.toJSON()).toMatchSnapshot();
+  MockDate.reset();
 });
-
-MockDate.reset();
