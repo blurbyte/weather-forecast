@@ -5,6 +5,10 @@ import PropTypes from 'prop-types';
 import Wrapper from './Wrapper';
 
 class Overlay extends Component {
+  static propTypes = {
+    children: PropTypes.node
+  };
+
   constructor(props) {
     super(props);
     this.overlayContainer = document.createElement('div');
@@ -20,9 +24,5 @@ class Overlay extends Component {
     return createPortal(<Wrapper {...rest}>{children}</Wrapper>, this.overlayContainer);
   }
 }
-
-Overlay.propTypes = {
-  children: PropTypes.node
-};
 
 export default Overlay;

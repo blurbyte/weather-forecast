@@ -11,12 +11,14 @@ const Input = styled.input.attrs({
   width: 100%;
   height: 6rem;
   border: none;
+  border-radius: 0;
   outline: none;
   border-bottom: 1px solid #222222;
   padding: 0 2rem;
   background: #ffffff;
   font-size: 1.8rem;
   color: #222222;
+  -webkit-appearance: none;
 
   &::placeholder {
     color: rgba(34, 34, 34, 0.5);
