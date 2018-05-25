@@ -4,6 +4,7 @@ injectGlobal`
   @import url('https://fonts.googleapis.com/css?family=Cardo:700&subset=latin-ext');
 
   html, body {
+    width: 100%;
     height: 100%;
   }
 
@@ -20,6 +21,5 @@ injectGlobal`
     font-weight: 400;
     overflow-y: scroll;
     user-select: none;
-    min-height: 100vh;
   }
 `;
