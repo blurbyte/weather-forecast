@@ -18,6 +18,8 @@ class SearchCityOverlay extends Component {
     fetchForecast: PropTypes.func.isRequired
   };
 
+  inputRef = React.createRef();
+
   state = {
     isExpanded: false
   };
@@ -30,6 +32,10 @@ class SearchCityOverlay extends Component {
     this.setState({ isExpanded: false });
   };
 
+  focusInput = () => {
+    this.inputRef.current.focus();
+  };
+
   render() {
     return (
       <Fragment>
@@ -40,7 +46,7 @@ class SearchCityOverlay extends Component {
             <Search fetchForecast={this.props.fetchForecast}>
               {({ search, foundCities, nothingFound, handleSearch, fetchForecast, resetForm }) => (
                 <Fragment>
-                  <Input placeholder="Your city name" value={search} onChange={handleSearch} />
+                  <Input placeholder="Your city name" value={search} onChange={handleSearch} innerRef={this.inputRef} />
                   {foundCities.length > 0 && (
                     <SearchCityResult
                       list={List}
@@ -49,7 +55,18 @@ class SearchCityOverlay extends Component {
                       fetchForecast={fetchForecast}
                     />
                   )}
-                  {!foundCities.length && nothingFound && <Status onMouseDown={resetForm}>No cities found</Status>}
+                  {!foundCities.length &&
+                    nothingFound && (
+                      <Status
+                        onClick={() => {
+                          resetForm();
+                          // Focus search input back after resetting form
+                          this.focusInput();
+                        }}
+                      >
+                        No cities found
+                      </Status>
+                    )}
                 </Fragment>
               )}
             </Search>
