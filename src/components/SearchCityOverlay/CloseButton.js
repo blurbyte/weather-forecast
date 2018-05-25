@@ -4,7 +4,7 @@ import Hitbox from '../Hitbox';
 import { CrossMark } from '../Icons';
 
 const CloseButton = props => (
-  <Hitbox {...props}>
+  <Hitbox {...props} aria-label="Close">
     <CrossMark />
   </Hitbox>
 );

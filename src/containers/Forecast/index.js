@@ -47,7 +47,7 @@ class Forecast extends Component {
   componentDidMount() {
     // retrieve cityId value from localStorage if it exists
     const cityId = localStorage.getItem(LOCAL_STORAGE_KEY)
-      ? localStorage.getItem(LOCAL_STORAGE_KEY)
+      ? parseInt(localStorage.getItem(LOCAL_STORAGE_KEY), 10)
       : this.state.cityId;
     this.fetchForecast(cityId);
     this.pollForecast();

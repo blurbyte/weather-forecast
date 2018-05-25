@@ -15,7 +15,7 @@ const Hitbox = styled(BaseHitbox)`
 `;
 
 const OpenButton = props => (
-  <Hitbox {...props}>
+  <Hitbox {...props} aria-label="Search">
     <Magnifier />
   </Hitbox>
 );

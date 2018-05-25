@@ -27,7 +27,7 @@ class SearchCity extends Component {
           handleSubmit,
           fetchForecast,
           resetFoundCities,
-          resetSearch
+          resetForm
         }) => (
           <Form onSubmit={handleSubmit}>
             <SearchInput
@@ -39,7 +39,7 @@ class SearchCity extends Component {
             {foundCities.length > 0 && (
               <SearchCityResult list={List} listItem={ListItem} cities={foundCities} fetchForecast={fetchForecast} />
             )}
-            {!foundCities.length && nothingFound && <Status onMouseDown={resetSearch}>No cities found</Status>}
+            {!foundCities.length && nothingFound && <Status onMouseDown={resetForm}>No cities found</Status>}
           </Form>
         )}
       </Search>

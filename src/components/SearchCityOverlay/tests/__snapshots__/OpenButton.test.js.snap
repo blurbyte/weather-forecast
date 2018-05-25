@@ -2,6 +2,7 @@
 
 exports[`renders correctly 1`] = `
 <button
+  aria-label="Search"
   className="sc-bwzfXH fLGIgm sc-bdVaJa dgIBSz"
 >
   <svg

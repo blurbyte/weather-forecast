@@ -38,7 +38,7 @@ class SearchCityOverlay extends Component {
           <Overlay>
             <TopBar onClose={this.hideOverlay} />
             <Search fetchForecast={this.props.fetchForecast}>
-              {({ search, foundCities, nothingFound, handleSearch, fetchForecast, resetSearch }) => (
+              {({ search, foundCities, nothingFound, handleSearch, fetchForecast, resetForm }) => (
                 <Fragment>
                   <Input placeholder="Your city name" value={search} onChange={handleSearch} />
                   {foundCities.length > 0 && (
@@ -49,7 +49,7 @@ class SearchCityOverlay extends Component {
                       fetchForecast={fetchForecast}
                     />
                   )}
-                  {!foundCities.length && nothingFound && <Status onMouseDown={resetSearch}>No cities found</Status>}
+                  {!foundCities.length && nothingFound && <Status onMouseDown={resetForm}>No cities found</Status>}
                 </Fragment>
               )}
             </Search>

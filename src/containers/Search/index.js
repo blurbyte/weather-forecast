@@ -14,17 +14,22 @@ class Search extends Component {
     children: PropTypes.func.isRequired
   };
 
-  state = {
+  initialState = {
     search: '',
     foundCities: [],
     nothingFound: false
   };
 
+  state = this.initialState;
+
   fetchCities = async search => {
     // Guards agains failed API responses
     // Since it accepts only at least 3 characters as search
-    if (search.length >= MIN_SEARCH_QUERY_LEN) {
-      const cities = await getCities(search);
+    // Trims to remove whitespaces from input
+    const trimmedQuery = search.trim();
+
+    if (trimmedQuery.length >= MIN_SEARCH_QUERY_LEN) {
+      const cities = await getCities(trimmedQuery);
 
       if (cities.length > 0) {
         this.setState({ foundCities: cities });
@@ -37,7 +42,7 @@ class Search extends Component {
 
   debounceFetch = debounce(() => {
     this.fetchCities(this.state.search);
-  }, 300);
+  }, 250);
 
   handleSearch = e => {
     const search = e.target.value;
@@ -45,6 +50,7 @@ class Search extends Component {
     this.setState({ search }, () => {
       if (this.state.search.length < MIN_SEARCH_QUERY_LEN) {
         this.resetFoundCities();
+        return;
       }
       this.debounceFetch();
     });
@@ -60,15 +66,15 @@ class Search extends Component {
     if (foundCities.length > 0) {
       this.props.fetchForecast(foundCities[0].cityId);
     }
-    this.setState({ search: '', nothingFound: false });
+    this.resetForm();
   };
 
   resetFoundCities = () => {
     this.setState({ foundCities: [], nothingFound: false });
   };
 
-  resetSearch = () => {
-    this.setState({ search: '', nothingFound: false });
+  resetForm = () => {
+    this.setState(this.initialState);
   };
 
   render() {
@@ -78,7 +84,7 @@ class Search extends Component {
       handleSubmit: this.handleSubmit,
       fetchForecast: this.props.fetchForecast,
       resetFoundCities: this.resetFoundCities,
-      resetSearch: this.resetSearch
+      resetForm: this.resetForm
     });
   }
 }
