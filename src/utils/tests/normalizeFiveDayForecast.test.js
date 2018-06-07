@@ -134,7 +134,7 @@ test('groupByDaytime() groups forecast by day', () => {
   ];
 
   const expectedData = {
-    '5/19/2018': [
+    '05/19/2018': [
       {
         dt: 1526720400,
         main: {
@@ -148,7 +148,7 @@ test('groupByDaytime() groups forecast by day', () => {
         }
       }
     ],
-    '5/20/2018': [
+    '05/20/2018': [
       {
         dt: 1526806800,
         main: {
@@ -401,13 +401,13 @@ test('normalizeFiveDayForecast() normalizes fetched five day forecast', () => {
   };
 
   const normalizedData = {
-    '5/20/2018': {
+    '05/20/2018': {
       weatherId: 800,
       description: 'clear sky',
       tempMin: 10.3,
       tempMax: 18.45
     },
-    '5/21/2018': {
+    '05/21/2018': {
       weatherId: 801,
       description: 'few clouds',
       tempMin: 15.99,
