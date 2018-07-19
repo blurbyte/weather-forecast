@@ -34,16 +34,3 @@ And on phone:
 ![Phone layout](https://eloriel.blob.core.windows.net/images/forecast-mobile.png)
 
 Tested on newest Chrome, Firefox, Edge and Safari (iOS).
-
-### Possible improvements
-Ranked from least time consuming:
-
-* support for geolocation
-* heavy rain theme
-* better error handling with error boundaries and messages
-* loading / placeholder indicator
-* improved dates formatting for vairious timezones
-* more tests (mainly for containers)
-* display detailed present day forecast on nice d3 graph
-* use TypeScript
-* graphql layer for more efficient API responses
