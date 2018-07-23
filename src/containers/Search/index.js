@@ -77,6 +77,10 @@ class Search extends Component {
     this.setState(this.initialState);
   };
 
+  componentWillUnmount() {
+    this.debounceFetch.cancel();
+  }
+
   render() {
     return this.props.children({
       ...this.state,
